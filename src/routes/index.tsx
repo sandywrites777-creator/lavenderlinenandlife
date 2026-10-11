@@ -27,7 +27,31 @@ export const Route = createFileRoute("/")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    scripts: (() => {
+      const f = products.find((p) => p.featured)!;
+      return [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: f.name,
+            description: f.blurb,
+            image: `https://lavenderlinenandlife.lovable.app${f.image}`,
+            category: f.category,
+            offers: {
+              "@type": "Offer",
+              price: f.price.replace(/[^0-9.]/g, ""),
+              priceCurrency: "USD",
+              url: f.url,
+              availability: "https://schema.org/InStock",
+            },
+          }),
+        },
+      ];
+    })(),
   }),
+  staticData: { sitemap: true },
   component: Home,
 });
 

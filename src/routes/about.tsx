@@ -23,7 +23,21 @@ export const Route = createFileRoute("/about")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://lavenderlinenandlife.lovable.app/" },
+            { "@type": "ListItem", position: 2, name: "About", item: "https://lavenderlinenandlife.lovable.app/about" },
+          ],
+        }),
+      },
+    ],
   }),
+  staticData: { sitemap: true },
   component: About,
 });
 

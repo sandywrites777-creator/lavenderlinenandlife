@@ -23,7 +23,35 @@ export const Route = createFileRoute("/shop")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://lavenderlinenandlife.lovable.app/" },
+            { "@type": "ListItem", position: 2, name: "Shop My Favorites", item: "https://lavenderlinenandlife.lovable.app/shop" },
+          ],
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          name: "Shop My Favorites",
+          itemListElement: products.map((p, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name: p.name,
+            url: p.url,
+          })),
+        }),
+      },
+    ],
   }),
+  staticData: { sitemap: true },
   component: Shop,
 });
 
@@ -69,6 +97,9 @@ function Shop() {
           ))}
         </div>
 
+        <h2 className="sr-only">
+          {filter === "All" ? "All products" : filter}
+        </h2>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {visible.map((product) => (
             <ProductCard key={product.id} product={product} />
