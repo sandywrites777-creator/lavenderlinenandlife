@@ -4,6 +4,19 @@ import planner from "@/assets/product-planner.jpg";
 import blanket from "@/assets/product-blanket.jpg";
 import makeup from "@/assets/product-makeup.jpg";
 import desk from "@/assets/product-desk.jpg";
+import silk from "@/assets/product-silk.jpg";
+import diffuser from "@/assets/product-diffuser.jpg";
+import pens from "@/assets/product-pens.jpg";
+import roller from "@/assets/product-roller.jpg";
+
+/** Paste your Amazon Associates Store ID here once approved (e.g. "sandywrites-20"). */
+export const AMAZON_STORE_ID = "";
+
+function amazon(search: string) {
+  const q = encodeURIComponent(search);
+  const tag = AMAZON_STORE_ID ? `&tag=${AMAZON_STORE_ID}` : "";
+  return `https://www.amazon.com/s?k=${q}${tag}`;
+}
 
 export type Category = "Beauty & Self-care" | "Home & Decor" | "Stationery & Tech";
 
@@ -34,7 +47,7 @@ export const products: Product[] = [
     whyILoveIt:
       "My skin drinks this up every morning — it layers beautifully under makeup and smells like a spa day.",
     image: serum,
-    url: "https://www.amazon.com/",
+    url: amazon("vitamin c glow serum and moisturizer set"),
     featured: true,
   },
   {
@@ -46,7 +59,7 @@ export const products: Product[] = [
     whyILoveIt:
       "It makes my whole room smell like a quiet Sunday morning, and the jar is gorgeous reused as a vase.",
     image: candle,
-    url: "https://www.amazon.com/",
+    url: amazon("lavender candle ribbed glass jar"),
   },
   {
     id: "blush-gold-planner",
@@ -57,7 +70,7 @@ export const products: Product[] = [
     whyILoveIt:
       "The layout keeps my content calendar and to-dos in one place — and it photographs beautifully for my pins.",
     image: planner,
-    url: "https://www.amazon.com/",
+    url: amazon("pink spiral planner gold coil"),
   },
   {
     id: "chunky-knit-throw",
@@ -68,7 +81,7 @@ export const products: Product[] = [
     whyILoveIt:
       "It's the blanket everyone asks about on my Pinterest boards — heavy, cozy, and impossibly pretty.",
     image: blanket,
-    url: "https://www.amazon.com/",
+    url: amazon("blush pink chunky knit throw blanket"),
   },
   {
     id: "rose-lip-blush-set",
@@ -79,7 +92,7 @@ export const products: Product[] = [
     whyILoveIt:
       "These are my five-minute-face heroes — the blush shades work on every skin tone I've tried.",
     image: makeup,
-    url: "https://www.amazon.com/",
+    url: amazon("lip oil blush palette set"),
   },
   {
     id: "mushroom-desk-lamp",
@@ -90,7 +103,51 @@ export const products: Product[] = [
     whyILoveIt:
       "The warm light is so flattering for late-night journaling — my desk finally feels like *mine*.",
     image: desk,
-    url: "https://www.amazon.com/",
+    url: amazon("mushroom table lamp ceramic"),
+  },
+  {
+    id: "silk-pillowcase-scrunchies",
+    name: "Pink Satin Pillowcase & Scrunchie Set",
+    category: "Beauty & Self-care",
+    price: "$15",
+    blurb: "Silky-soft satin that's kinder to your hair and skin while you sleep.",
+    whyILoveIt:
+      "I wake up with fewer tangles and no creases on my face — and it makes my bed look like a hotel.",
+    image: silk,
+    url: amazon("pink satin pillowcase scrunchie set"),
+  },
+  {
+    id: "lavender-diffuser",
+    name: "Frosted Lavender Aroma Diffuser",
+    category: "Home & Decor",
+    price: "$27",
+    blurb: "A soft-glow mist diffuser that turns bedtime into a little ritual.",
+    whyILoveIt:
+      "A few drops of lavender oil and my room instantly feels calmer. The gentle light doubles as a night lamp.",
+    image: diffuser,
+    url: amazon("aesthetic essential oil diffuser purple"),
+  },
+  {
+    id: "pastel-pens-set",
+    name: "Pastel Gel Pens & Highlighters",
+    category: "Stationery & Tech",
+    price: "$12",
+    blurb: "Smooth-writing pastel pens that make every to-do list prettier.",
+    whyILoveIt:
+      "They don't bleed through my planner pages, and the soft colors look dreamy in flat-lay photos.",
+    image: pens,
+    url: amazon("pastel gel pens highlighters aesthetic"),
+  },
+  {
+    id: "rose-quartz-roller",
+    name: "Rose Quartz Roller & Gua Sha",
+    category: "Beauty & Self-care",
+    price: "$14",
+    blurb: "A cooling face roller and gua sha stone for a de-puffed morning glow.",
+    whyILoveIt:
+      "I keep it in the fridge — two minutes of rolling with my serum and my face looks so much more awake.",
+    image: roller,
+    url: amazon("rose quartz face roller gua sha set"),
   },
 ];
 
