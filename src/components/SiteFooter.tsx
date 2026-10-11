@@ -12,7 +12,7 @@ export function SiteFooter() {
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10">
                 <Heart className="h-4 w-4 fill-primary text-primary" />
               </span>
-              <span className="font-heading text-2xl text-foreground">Sandy Writes</span>
+              <span className="font-heading text-xl text-foreground sm:text-2xl">Lavenderlinenandlife</span>
             </div>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-muted-foreground">
               Cozy finds, pretty things, and honest favorites — curated with love and
@@ -66,7 +66,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-border/60 pt-6 text-xs text-muted-foreground sm:flex-row">
-          <p>© {new Date().getFullYear()} Sandy Writes. Made with love and lavender.</p>
+          <p>© {new Date().getFullYear()} Lavenderlinenandlife. Made with love and lavender.</p>
           <a
             href={PINTEREST_URL}
             target="_blank"

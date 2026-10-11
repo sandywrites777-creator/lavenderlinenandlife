@@ -8,13 +8,13 @@ import { categories, products, type Category } from "@/data/products";
 export const Route = createFileRoute("/shop")({
   head: () => ({
     meta: [
-      { title: "Shop My Favorites — Sandy Writes" },
+      { title: "Shop My Favorites — Lavenderlinenandlife" },
       {
         name: "description",
         content:
           "Every product I genuinely love, in one place — beauty, home decor, and stationery finds with links to shop them on Amazon.",
       },
-      { property: "og:title", content: "Shop My Favorites — Sandy Writes" },
+      { property: "og:title", content: "Shop My Favorites — Lavenderlinenandlife" },
       {
         property: "og:description",
         content:

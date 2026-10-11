@@ -8,13 +8,13 @@ import { PINTEREST_URL } from "@/data/products";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Sandy Writes" },
+      { title: "About — Lavenderlinenandlife" },
       {
         name: "description",
         content:
           "Hi, I'm Sandy — I curate cozy, pretty finds on Pinterest and share the ones worth buying, with honest reviews and affiliate links.",
       },
-      { property: "og:title", content: "About — Sandy Writes" },
+      { property: "og:title", content: "About — Lavenderlinenandlife" },
       {
         property: "og:description",
         content:
