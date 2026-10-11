@@ -10,8 +10,8 @@ export function SiteNav() {
           <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10">
             <Heart className="h-4 w-4 fill-primary text-primary" />
           </span>
-          <span className="font-heading text-2xl tracking-tight text-foreground">
-            Sandy Writes
+          <span className="font-heading text-xl tracking-tight text-foreground sm:text-2xl">
+            Lavenderlinenandlife
           </span>
         </Link>
 

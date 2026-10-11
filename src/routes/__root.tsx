@@ -78,14 +78,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Sandy Writes — Cozy Finds & Honest Favorites" },
+      { title: "Lavenderlinenandlife — Cozy Finds & Honest Favorites" },
       {
         name: "description",
         content:
           "A curated corner of the internet for pretty, cozy things — beauty, home decor, and stationery favorites hand-picked by Sandy.",
       },
-      { name: "author", content: "Sandy Writes" },
-      { property: "og:title", content: "Sandy Writes — Cozy Finds & Honest Favorites" },
+      { name: "author", content: "Lavenderlinenandlife" },
+      {
+        property: "og:title",
+        content: "Lavenderlinenandlife — Cozy Finds & Honest Favorites",
+      },
       {
         property: "og:description",
         content:
