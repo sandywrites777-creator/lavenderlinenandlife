@@ -29,7 +29,7 @@ export const Route = createFileRoute("/")({
 });
 
 function Home() {
-  const featured = products.find((p) => p.featured) ?? products[0];
+  const featured = products.find((p) => p.featured)!;
   const editorsPicks = products.filter((p) => p.id !== featured.id).slice(0, 3);
 
   return (
