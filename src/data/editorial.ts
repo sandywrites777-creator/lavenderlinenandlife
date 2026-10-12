@@ -359,3 +359,8 @@ export const articles: Article[] = [
     ]
   }
 ];
+
+export function articleWordCount(article: Article): number {
+  const text = [article.introduction, ...article.sections.flatMap((s) => s.paragraphs)].join(" ");
+  return text.trim().split(/\s+/).filter(Boolean).length;
+}
