@@ -12,13 +12,13 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "Hi, I'm Sandy — I curate cozy, pretty finds on Pinterest and share the ones worth buying, with honest reviews and affiliate links.",
+          "Hi, I'm Sandy — I curate cozy, pretty finds on Pinterest and write cozy home and planning stories, with clearly labeled affiliate links.",
       },
       { property: "og:title", content: "About — Lavenderlinenandlife" },
       {
         property: "og:description",
         content:
-          "Hi, I'm Sandy — I curate cozy, pretty finds on Pinterest and share the ones worth buying.",
+          "Hi, I'm Sandy — I curate cozy, pretty finds on Pinterest and write stories about cozy living.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -68,17 +68,27 @@ function About() {
           </h1>
           <div className="mt-6 space-y-4 text-lg leading-relaxed text-muted-foreground">
             <p>
-              I'm a hopeless romantic for cozy corners, pretty stationery, and
-              skincare that feels like a ritual. What started as pinning my dream
-              life on Pinterest turned into something better — actually finding and
-              testing the things worth bringing home.
+              I'm the girl with forty Pinterest boards and a camera roll full of other people's
+              living rooms. Soft pinks, lavender, linen, a candle on a stack of books — that's my
+              happy place, and Lavenderlinenandlife is where I collect it all.
             </p>
             <p>
-              Here, I share the finds that made the cut. Every product on this site
-              is something I've genuinely used and loved, linked through Amazon so
-              you can grab it in a couple of clicks.
+              This site is two things. The <Link to="/blog" className="text-primary underline">journal</Link>{" "}
+              is where I write about small, real-life ways to make a home and a week feel cozier.
+              The <Link to="/shop" className="text-primary underline">curated picks</Link> are
+              products I've found while browsing that match the look and feel I love.
             </p>
-            <p className="flex items-start gap-2 text-base">
+            <p>
+              I want to be upfront: I haven't personally tried every product I link. When I
+              share a pick, it's because the design, color, or idea caught my eye — not a lab
+              test or a promise. Always check sizes, shades and reviews on Amazon before you buy.
+            </p>
+            <p>
+              The photos in my stories come from talented photographers on Unsplash and are
+              credited under each image. They're not my own photos, and they don't show the
+              exact products linked.
+            </p>
+<p className="flex items-start gap-2 text-base">
               <Heart className="mt-1 h-4 w-4 shrink-0 fill-primary text-primary" />
               <span>
                 Full transparency: as an Amazon Associate, I earn a small commission
