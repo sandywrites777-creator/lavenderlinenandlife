@@ -243,7 +243,7 @@ export const articles: Article[] = [
         paragraphs: [
           'I’ve realized that the secret to a cozy bedroom is all about the layers. I love having a few different throws and pillows to mix and match. I’ve been really wanting to get the SALIMAH Chunky Knit Throw Blanket in Pink, because it just looks so soft and warm. And the Nestinco Blush Pink Velvet Pillow Covers (set of 2) would be a perfect addition to my bed! They add such a lovely, soft touch to the whole room.',
           'I think it’s so important to have a space that feels inviting. When I walk into my room, I want to feel like I can just curl up and relax. And I’ve found that having those soft, cozy layers makes such a difference. It’s like it’s inviting you to take a break and just breathe.',
-          'And don’t be afraid to experiment with different textures! You might be surprised by how much of a difference it makes to have a soft fleece throw next to some velvet pillows. It’s all about creating that inviting, cozy feel.'
+          'And don’t be afraid to experiment with different textures! You might be surprised by how much of a difference it makes to have a soft knitted throw next to some velvet pillows. It’s all about creating that inviting, cozy feel.'
         ]
       },
       {
