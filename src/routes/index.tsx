@@ -3,53 +3,39 @@ import { ArrowRight, ExternalLink, Sparkles } from "lucide-react";
 import hero from "@/assets/hero.jpg";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
-import { ProductCard } from "@/components/ProductCard";
+import { ProductCard, ProductTile } from "@/components/ProductCard";
+import { ArticleCard } from "@/components/ArticleCard";
 import { categories, products, PINTEREST_URL } from "@/data/products";
+import { articles } from "@/data/editorial";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Lavenderlinenandlife — Cozy Finds & Honest Favorites" },
+      { title: "Lavenderlinenandlife — Cozy Finds & Curated Picks" },
       {
         name: "description",
         content:
-          "A curated corner of the internet for pretty, cozy things — beauty, home decor, and stationery favorites hand-picked by Sandy and shared on Pinterest.",
+          "Cozy home, beauty, and stationery picks plus real-life styling stories from Sandy of Lavenderlinenandlife, shared on Pinterest.",
       },
-      {
-        property: "og:title",
-        content: "Lavenderlinenandlife — Cozy Finds & Honest Favorites",
-      },
+      { property: "og:title", content: "Lavenderlinenandlife — Cozy Finds & Curated Picks" },
       {
         property: "og:description",
-        content:
-          "Beauty, home decor, and stationery favorites, curated with love. Shop the finds you see on my Pinterest boards.",
+        content: "Blush-and-lavender home, beauty, and stationery picks, with stories on styling them.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    scripts: (() => {
-      const f = products.find((p) => p.featured)!;
-      return [
-        {
-          type: "application/ld+json",
-          children: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Product",
-            name: f.name,
-            description: f.blurb,
-            image: `https://lavenderlinenandlife.lovable.app${f.image}`,
-            category: f.category,
-            offers: {
-              "@type": "Offer",
-              price: f.price.replace(/[^0-9.]/g, ""),
-              priceCurrency: "USD",
-              url: f.url,
-              availability: "https://schema.org/InStock",
-            },
-          }),
-        },
-      ];
-    })(),
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "Lavenderlinenandlife",
+          url: "https://lavenderlinenandlife.lovable.app/",
+        }),
+      },
+    ],
   }),
   staticData: { sitemap: true },
   component: Home,
@@ -115,18 +101,16 @@ function Home() {
       {/* Featured pick — magazine style */}
       <section className="border-y border-border/60 bg-secondary/40">
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-5 lg:py-20">
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-3">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
-              This week's featured find
+              This week's featured find · {featured.brand}
             </p>
             <h2 className="mt-4 font-heading text-4xl leading-tight text-foreground sm:text-5xl">
               {featured.name}
             </h2>
-            <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-              {featured.blurb}
-            </p>
+            <p className="mt-4 text-lg leading-relaxed text-muted-foreground">{featured.blurb}</p>
             <blockquote className="mt-6 border-l-2 border-primary/50 pl-4 font-heading text-xl italic leading-relaxed text-foreground/80">
-              "{featured.whyILoveIt}"
+              "{featured.whyIPicked}"
             </blockquote>
             <a
               href={featured.url}
@@ -134,33 +118,45 @@ function Home() {
               rel="noopener noreferrer sponsored"
               className="mt-8 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-soft transition-transform hover:-translate-y-0.5"
             >
-              View on Amazon · {featured.price}
+              View this item on Amazon
               <ExternalLink className="h-4 w-4" />
             </a>
           </div>
-          <div className="lg:col-span-3">
-            <img
-              src={featured.image}
-              alt={featured.name}
-              loading="lazy"
-              width={1024}
-              height={1024}
-              className="w-full rounded-[2rem] object-cover shadow-soft"
-            />
+          <div className="lg:col-span-2">
+            <ProductTile product={featured} className="aspect-square rounded-[2rem] shadow-soft" />
           </div>
         </div>
       </section>
 
-      {/* Editor's picks */}
+      {/* Journal */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">
+        <div className="flex items-end justify-between gap-4">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">From the journal</p>
+            <h2 className="mt-3 font-heading text-4xl text-foreground sm:text-5xl">Latest stories</h2>
+          </div>
+          <Link
+            to="/blog"
+            className="hidden items-center gap-1.5 text-sm font-medium text-primary hover:text-plum sm:inline-flex"
+          >
+            All stories <ArrowRight className="h-4 w-4" />
+          </Link>
+        </div>
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {articles.slice(0, 3).map((a) => (
+            <ArticleCard key={a.slug} article={a} />
+          ))}
+        </div>
+      </section>
+
+      {/* Editor's picks */}
+      <section className="border-t border-border/60 mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">
         <div className="flex items-end justify-between gap-4">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
               Fresh from my boards
             </p>
-            <h2 className="mt-3 font-heading text-4xl text-foreground sm:text-5xl">
-              Editor's picks
-            </h2>
+            <h2 className="mt-3 font-heading text-4xl text-foreground sm:text-5xl">Curated picks</h2>
           </div>
           <Link
             to="/shop"
