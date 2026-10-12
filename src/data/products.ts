@@ -1,3 +1,5 @@
+// ============= Full file contents =============
+
 /** Paste your Amazon Associates Store ID here once approved (e.g. "sandywrites-20"). */
 export const AMAZON_STORE_ID = "";
 
@@ -7,6 +9,17 @@ export function amazonProductUrl(asin: string) {
   return `https://www.amazon.com/dp/${asin}${tag}`;
 }
 
+import blanketImg from "@/assets/product-blanket.jpg";
+import sherpaImg from "@/assets/product-sherpa.jpg";
+import candleImg from "@/assets/product-candle.jpg";
+import pillowImg from "@/assets/product-pillow.jpg";
+import plannerImg from "@/assets/product-planner.jpg";
+import notebookImg from "@/assets/product-notebook.jpg";
+import pensImg from "@/assets/product-pens.jpg";
+import makeupImg from "@/assets/product-makeup.jpg";
+import blushImg from "@/assets/product-blush.jpg";
+import diffuserImg from "@/assets/product-diffuser.jpg";
+
 export type Category = "Beauty & Self-care" | "Home & Decor" | "Stationery & Desk";
 
 export interface Product {
@@ -15,6 +28,8 @@ export interface Product {
   brand: string;
   category: Category;
   asin: string;
+  /** Hand-illustrated scene in the site's palette — not a photo of the actual item. */
+  image: string;
   blurb: string;
   /** Why it made the list — honest, no claims of personal use. */
   whyIPicked: string;
@@ -29,6 +44,7 @@ const raw: Omit<Product, "url">[] = [
     brand: "Thesis",
     category: "Home & Decor",
     asin: "B0B64BTWTP",
+    image: blanketImg,
     blurb: "A soft blush fleece throw, 50 × 60 inches — sofa-sized without swallowing the room.",
     whyIPicked:
       "That exact dusty-pink shade is the one I keep saving on Pinterest. It's the easiest way to warm up a plain grey couch.",
@@ -40,6 +56,7 @@ const raw: Omit<Product, "url">[] = [
     brand: "L'COZEE",
     category: "Home & Decor",
     asin: "B006FZVZJO",
+    image: sherpaImg,
     blurb: "A thick lavender sherpa throw with a plush, teddy-like feel.",
     whyIPicked: "If you want lavender without painting a single wall, a blanket is the low-commitment way in.",
   },
@@ -49,6 +66,7 @@ const raw: Omit<Product, "url">[] = [
     brand: "Yankee Candle",
     category: "Home & Decor",
     asin: "B07PD7Y6HH",
+    image: candleImg,
     blurb: "A 22 oz two-wick candle with a floral scent and a soft pink jar.",
     whyIPicked: "The pink glass looks lovely on a bookshelf, lit or not — and it's a safe gift for almost anyone.",
   },
@@ -58,6 +76,7 @@ const raw: Omit<Product, "url">[] = [
     brand: "Nestinco",
     category: "Home & Decor",
     asin: "B0B1DFJRWP",
+    image: pillowImg,
     blurb: "Two 22 × 22 inch velvet covers — swap them onto inserts you already own.",
     whyIPicked: "Changing pillow covers is my favorite cheap trick for making a room look new for the season.",
   },
@@ -67,6 +86,7 @@ const raw: Omit<Product, "url">[] = [
     brand: "Erin Condren",
     category: "Stationery & Desk",
     asin: "B0CSDWG7K1",
+    image: plannerImg,
     blurb: "An 8 × 10 inch soft-bound planner with monthly and weekly pages.",
     whyIPicked: "The blush cover is pretty, but I picked it for the roomy weekly layout. Check the start month before you buy.",
   },
@@ -76,6 +96,7 @@ const raw: Omit<Product, "url">[] = [
     brand: "Rifle Paper Co.",
     category: "Stationery & Desk",
     asin: "B0G2FDVBFR",
+    image: notebookImg,
     blurb: "An illustrated floral notebook with gold-foil details and perforated pages.",
     whyIPicked: "It's the kind of notebook you actually want to leave out on the desk, which means you'll use it.",
   },
@@ -85,6 +106,7 @@ const raw: Omit<Product, "url">[] = [
     brand: "Sakura",
     category: "Stationery & Desk",
     asin: "B016VJGZ5W",
+    image: pensImg,
     blurb: "Puffy, opaque pastel gel pens in ten colors — they show up even on dark paper.",
     whyIPicked: "Great for planner doodles and labels. Test one on the back page first; ink and paper don't always agree.",
   },
@@ -94,6 +116,7 @@ const raw: Omit<Product, "url">[] = [
     brand: "NYX Professional Makeup",
     category: "Beauty & Self-care",
     asin: "B002QI6KHQ",
+    image: makeupImg,
     blurb: "A pressed powder blush from a well-known drugstore brand, in many shades.",
     whyIPicked: "A budget-friendly place to start if you're experimenting with blush. Pick the shade on Amazon before ordering.",
   },
@@ -103,6 +126,7 @@ const raw: Omit<Product, "url">[] = [
     brand: "Laura Mercier",
     category: "Beauty & Self-care",
     asin: "B09GWDKKD4",
+    image: blushImg,
     blurb: "A pressed powder blush from Laura Mercier's Colour Infusion line.",
     whyIPicked: "This one's on my treat-yourself wishlist — the compact alone looks gift-ready.",
   },
@@ -112,6 +136,7 @@ const raw: Omit<Product, "url">[] = [
     brand: "ASAKUKI",
     category: "Beauty & Self-care",
     asin: "B0B4WJXTBQ",
+    image: diffuserImg,
     blurb: "A 100 ml mist diffuser that comes bundled with a lavender essential oil.",
     whyIPicked: "A nice bedside piece for a slow-evening corner. Read the safety notes if you have pets.",
   },

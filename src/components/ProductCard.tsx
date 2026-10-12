@@ -1,23 +1,21 @@
-import { ExternalLink, Flower2, Home, PenLine } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import type { Product } from "@/data/products";
 
-const icons = {
-  "Beauty & Self-care": Flower2,
-  "Home & Decor": Home,
-  "Stationery & Desk": PenLine,
-};
-
+/** Shows the hand-illustrated product scene, clearly labeled as an illustration. */
 export function ProductTile({ product, className = "" }: { product: Product; className?: string }) {
-  const Icon = icons[product.category];
   return (
-    <div
-      className={`relative flex flex-col items-center justify-center gap-3 bg-gradient-to-br from-blush via-rose/60 to-lavender/40 p-6 text-center ${className}`}
-    >
-      <span className="flex h-14 w-14 items-center justify-center rounded-full bg-background/80 shadow-card">
-        <Icon className="h-6 w-6 text-primary" />
+    <div className={`relative overflow-hidden ${className}`}>
+      <img
+        src={product.image}
+        alt={`Illustration of ${product.name}`}
+        width={1024}
+        height={1024}
+        loading="lazy"
+        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+      />
+      <span className="absolute inset-x-3 bottom-3 rounded-full bg-background/85 px-3 py-1 text-center text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
+        Illustration — see real photos on Amazon
       </span>
-      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-plum">{product.brand}</p>
-      <p className="text-xs text-muted-foreground">See real photos on Amazon</p>
     </div>
   );
 }
