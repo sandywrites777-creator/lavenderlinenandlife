@@ -12,112 +12,350 @@ export const editorialPhotos = {
 export type PhotoKey = keyof typeof editorialPhotos;
 export interface ArticleSection { heading: string; paragraphs: string[]; }
 export interface Article { slug: string; title: string; category: string; excerpt: string; photo: PhotoKey; introduction: string; sections: ArticleSection[]; productIds: string[]; }
+
 export const articles: Article[] = [
-{
-slug: 'cozy-desk-setup', title: '5 thoughtful finds for a cozy desk setup', category: 'Stationery & Tech', photo: 'desk',
-excerpt: 'A calmer work surface, softer lighting, and useful little details—without filling every inch of your desk.',
-productIds: ['desk-lamp', 'pastel-highlighters', 'notebook'],
-introduction: 'A cozy desk does not need a complete makeover. It needs enough clear space to work, light that reaches the page, and a few objects that make everyday tasks feel more considered. Start with what you already own, then look for the gaps that actually interrupt your day. The five finds below are categories to consider, not a shopping checklist. The linked products are curated examples rather than items personally tested for this guide. Measure your surface before ordering anything, and check the exact size, color, and included accessories on the product page.',
-sections: [
-{heading:'1. A lamp that puts light where you need it', paragraphs:['Desk lighting should serve the task before it serves the photograph. Put your lamp opposite your writing hand so your hand is less likely to cast a shadow over the page. If you use a monitor, move the shade until you cannot see a bright reflection on the screen. An adjustable lamp is worth considering because the same desk may be used for writing, video calls, and reading. The linked LEPOWER desk lamp is one option to compare; check whether the selected listing includes a bulb and what bulb specifications it accepts. Choose the bulb for your space rather than assuming the listing photo shows its exact brightness.']},
-{heading:'2. A notebook with a clear purpose', paragraphs:['A notebook earns its place when you know what belongs inside it. Use one section for today’s priorities, another for ideas, and a final section for notes you want to revisit. A simple bound notebook can be easier to keep tidy than several loose sheets. The linked LEUCHTTURM1917 notebook is a specific example, but page ruling and size matter more than the brand. Dotted pages suit flexible layouts; ruled pages suit longer writing. Check the selected edition before ordering. If your current notebook still has empty pages, use those first and put the money toward an actual missing tool instead.']},
-{heading:'3. A small, intentional color system', paragraphs:['Pastel highlighters can make a page pleasant to look at, but too many colors can turn planning into another job. Give three colors fixed meanings: action, appointment, and reference. Write a tiny key inside the cover, then keep those meanings consistent. Zebra Mildliner markers are linked as an example of a named stationery product, not as a promise that they will suit every paper. Test any marker on a back page before using it across a finished spread. Thin paper, ink type, drying time, and pressure all affect the result. Underlining with your existing pen works just as well when you want fewer supplies.']},
-{heading:'4. A tray borrowed from another room', paragraphs:['A small dish or shallow tray can gather clips, an eraser, and the one pen you use most often. Before buying a special desk organizer, try a saucer or box you already have. Place it at the back corner rather than in the center of your working area. The useful question is not whether it looks aesthetic, but whether you can put everything away in one motion. Avoid creating a container for every tiny object. If the tray is constantly overflowing, reduce its contents instead of choosing a larger one. A clear desk edge also gives your wrists and notebook room to move comfortably.']},
-{heading:'5. A soft detail that does not get in the way', paragraphs:['A textile on the chair or a cushion behind your back can soften the room without covering the desk itself. Keep fabric clear of lamps, heaters, chargers, and drinks. If you are considering a throw, check its dimensions and care label first; a large blanket may drag across the floor or catch beneath a rolling chair. A small piece you already own is often enough. Think about contrast as well as color: a pale textile on a pale chair can disappear, while a textured one adds interest. Comfort should come from your actual sitting position, not from a product description promising an ergonomic transformation.']},
-{heading:'Finish with a ten-minute reset', paragraphs:['Take everything off the surface, wipe it down according to its finish, and return only what you used this week. Route charging cables behind the desk without stretching or trapping them. Sit in the chair and open your notebook before deciding where decorative objects go. If you have to move three things to start work, the arrangement is not finished yet. Photograph your own desk in daylight if you want a Pinterest pin, and keep the photo honest about what is actually there. The editorial photograph accompanying this guide is a licensed inspiration image, not a photograph of the linked products or a personal desk test.']},
-]},
-{
-slug:'style-a-reading-nook', title:'How to style a reading nook in a small space', category:'Home & Decor', photo:'home',
-excerpt:'Start with a comfortable seat and good light, then add texture and a place for your current book.',
-productIds:['desk-lamp','throw','notebook'],
-introduction:'A reading nook is less about owning a particular chair and more about making it easy to sit down with a book. A corner of your bedroom, the end of a sofa, or a quiet spot beside a window can all work. Before adding anything, spend fifteen minutes reading in the place you have chosen. Notice where your feet go, whether the light reaches the page, and where you put your drink. Those small observations are more useful than copying a room photograph. This guide suggests a practical order for arranging the space, with named product links offered as optional curated examples.',
-sections:[
-{heading:'Choose the seat before the accessories', paragraphs:['Use a chair or sofa you already find comfortable. A beautiful seat that makes you shift every few minutes is not a good starting point. Check that your feet can rest comfortably and that the back supports the position in which you actually read. If you want to try a cushion, borrow one from another room before buying a dedicated version. Leave a clear route to and from the seat, including space for a door to open. In a shared room, keep the nook out of the main walking path. You should not need to rearrange furniture every time someone wants to pass through.']},
-{heading:'Give the page its own light', paragraphs:['Daylight can be lovely, but it changes throughout the day and may not reach a book in the evening. Put a lamp beside or slightly behind the seat, directing light onto the page rather than into your eyes. The linked LEPOWER lamp is an example to compare if you have a nearby surface; it is not a substitute for checking your own layout. Confirm cable length, bulb requirements, and the stability of the surface before ordering. Keep the cable away from walkways. Curtains or blinds can help manage glare from a window, especially if you also read on a reflective tablet screen.']},
-{heading:'Add one textile, not a pile of props', paragraphs:['A throw gives a reading corner texture and can be useful when the room is cool. The linked Bedsure fleece throw is one specific option, but check the selected size, fabric composition, and wash instructions. Fold a throw over the arm or back of the chair so it is easy to reach without sitting on it. If you prefer blush and lavender, choose one of those colors as the accent and let the rest of the corner stay quieter. A cushion with a slightly different texture can add depth without introducing another color. Avoid letting fabric hang over lamps or trail across a frequently used walkway.']},
-{heading:'Make a landing spot for a book and cup', paragraphs:['A side table is useful, but an existing stable stool or a cleared section of a nearby shelf may do the job. The surface needs to be within easy reach and large enough for your book without balancing it on an edge. Use a coaster if the finish needs protection, and keep hot drinks away from electrical items. If your room is too small for another piece of furniture, choose a tray that can sit securely on an existing surface. Do not stack books beneath a lamp to create a makeshift pedestal. Stability is more important than the height or symmetry of the arrangement.']},
-{heading:'Keep your current reading visible', paragraphs:['A nook becomes a habit-friendly space when the next book is already there. Keep one current book and perhaps one next choice nearby; move the rest back to a shelf. A notebook can hold quotations, reading notes, or a list of books you want to borrow. The linked LEUCHTTURM1917 notebook is an optional example, not something you need to make reading count. Library books, secondhand copies, and a notes app all belong in this routine too. If you like displaying books, arrange a small group with enough room to remove one easily. An overloaded pile can make the corner feel unfinished rather than inviting.']},
-{heading:'Let the space settle before buying more', paragraphs:['Use the arrangement for a week and pay attention to what gets moved. If a cushion is always on the floor, remove it. If the lamp never reaches the page, change its position before replacing it. Take a quick photograph to see clutter you might overlook in person, but judge the result by comfort rather than how closely it resembles a Pinterest image. Check Amazon listings for the exact variants and delivery details before purchasing any linked example. The photograph in this article is an editorial inspiration image from Unsplash, not the owner’s reading corner or a demonstration of the products mentioned here.']},
-]},
-{
-slug:'gentle-evening-routine', title:'Build a gentle evening routine without a shopping list', category:'Beauty & Self-care', photo:'home',
-excerpt:'A small reset, a comfortable bedside setup, and a routine that fits the life you already have.',
-productIds:['pillowcase','notebook','moisturizer'],
-introduction:'An evening routine does not need to look like a video montage. It can be a short sequence that helps tomorrow feel less scattered: put a few things away, prepare what you need, and choose one quiet activity. Different households have different schedules, so there is no universal bedtime formula here. This is a practical organization guide, not medical advice or a claim that a product will improve sleep. The linked pillowcase, notebook, and moisturizer are curated options to investigate only if you already need something in those categories. Begin with changes that require no purchase.',
-sections:[
-{heading:'Make the reset small enough to repeat', paragraphs:['Choose one surface to clear each evening rather than trying to tidy the entire house. A bedside table or a section of the kitchen counter is a manageable place to start. Put cups back, return loose items to their homes, and leave the surface ready for the next morning. Give the task a natural finish: when that surface is clear, stop. This makes the routine easier to repeat on busy days. If you share your space, agree on a simple arrangement that works for everyone instead of creating a display that other people cannot use. A routine should reduce friction, not add a new standard to maintain.']},
-{heading:'Prepare one thing for tomorrow', paragraphs:['Lay out the notebook you need, fill a water bottle according to your normal routine, or gather the items you take out of the house. Pick the preparation that solves your most common morning scramble. Write tomorrow’s first necessary task on a scrap of paper rather than building a long, ambitious list. If you like keeping those notes together, the linked LEUCHTTURM1917 notebook is one optional tool. A notebook cannot organize your schedule by itself, and you do not need a special layout. Leave space for changes, interruptions, and ordinary days when getting the basics done is enough.']},
-{heading:'Keep skincare familiar and simple', paragraphs:['If cleansing and moisturizing are already part of your routine, put those products where you can reach them easily. Resist adding several new formulas at once simply because they appear in an aesthetic photograph. The linked CeraVe Moisturizing Cream is a named product to research, not a personalized recommendation for your skin. Read the ingredient list and label instructions, and consider your known sensitivities. Stop using a product if it irritates you, and ask a qualified clinician about ongoing skin concerns. A clean washcloth and a familiar product may be a better choice than a complicated collection that you do not enjoy maintaining.']},
-{heading:'Check the bedding you actually use', paragraphs:['Start with laundering and arranging the bedding you have according to its care labels. If a pillowcase needs replacing, compare its fabric, closure, and dimensions with your pillow. The linked Bedsure satin pillowcases are an example of a satin product; satin describes a weave, not a guarantee of silk or a health benefit. Check the stated fiber content on the selected listing. Different fabrics can feel different depending on room temperature and personal preference. Do not expect a pillowcase to solve a sleep or skin problem. The practical goal is simply bedding that fits, feels comfortable to you, and can be cared for consistently.']},
-{heading:'Choose a quiet activity you genuinely enjoy', paragraphs:['Reading a few pages, folding laundry, sketching, or writing a short note can all be part of an evening transition. Choose the activity because it fits your life, not because it seems like the right thing to photograph. If you want less time on your phone, place it somewhere that still allows you to hear necessary calls and set any alarms you rely on. Avoid making a rigid rule that becomes another source of stress. You can keep a book or notebook nearby as an invitation rather than an obligation. Some evenings will be social or busy, and your routine should allow for that.']},
-{heading:'Review what feels useful after a week', paragraphs:['Ask which steps made the next morning easier and which felt like extra chores. Keep the useful steps, shorten the others, and give yourself permission to skip the routine when circumstances change. If you are struggling with persistent sleep problems, anxiety, or skin symptoms, shopping suggestions are not an appropriate substitute for professional support. No linked product in this guide has been personally tested for sleep improvement. The real editorial photograph is used for atmosphere and is not a picture of the owner’s home. Check the specific product listing, care details, and returns information before buying any optional item mentioned here.']},
-]},
-{
-slug:'paper-planning-that-works', title:'A simple paper planning system you can actually keep', category:'Stationery & Tech', photo:'planning',
-excerpt:'One notebook, three useful lists, and a weekly review that leaves room for real life.',
-productIds:['notebook','pastel-highlighters'],
-introduction:'Paper planning can be useful when it gives you a place to capture tasks without opening another app. It becomes less useful when decorating the page takes longer than doing the work. You do not need a new planner at the start of every season. An existing notebook, a pen, and a repeatable structure are enough to begin. This guide builds a small system around a weekly overview, a daily list, and a place for ideas. The stationery links are specific curated examples for people who need supplies, not evidence that those items have been personally tested or will make anyone more productive.',
-sections:[
-{heading:'Give every task one reliable home', paragraphs:['Choose one notebook for active plans and stop scattering tasks across several loose pages. Put a simple index at the front if you expect to use different sections. A bound notebook such as the linked LEUCHTTURM1917 is one option, but your existing exercise book can do the same job. Check page ruling, dimensions, and the edition before buying a named notebook. The important part is knowing where to look when you remember a task. If an appointment already lives in a calendar you share with other people, keep that calendar as the source of truth rather than copying details into multiple places that can disagree.']},
-{heading:'Build a weekly overview without filling every gap', paragraphs:['Use a two-page spread or a single page to write the week’s fixed commitments. Add deadlines you know are real, then leave blank space around them. Do not assign a task to every hour just because the page has room. Include ordinary responsibilities such as travel time and household errands if they affect what you can realistically do. A short list of optional tasks can sit below the fixed items. That keeps flexible work separate from commitments you cannot casually move. If the week changes, cross something out or redraw a line. A planner is a working document, not a piece of artwork you must preserve.']},
-{heading:'Make the daily list deliberately short', paragraphs:['Start each day by choosing up to three tasks that matter most, then list smaller tasks separately if you need to. Break large projects into actions that can actually be started: “draft the opening paragraph” is easier to approach than “finish website.” Be specific about the next step without pretending you can predict the whole day. When a task moves forward repeatedly, ask whether it is too large, no longer relevant, or waiting for someone else. Record the blocker rather than rewriting the same vague phrase. Completed tasks are useful information; unfinished ones are information too, not a reason to judge the entire day as a failure.']},
-{heading:'Use color to identify, not decorate', paragraphs:['Give a few colors stable meanings so you can scan the page quickly. One might mark appointments, another important follow-ups, and another reference material. The linked Zebra Mildliner set is a specific stationery example to compare, but a single pen and a few symbols work perfectly well. Test marker ink on a spare page because paper and ink combinations behave differently. Avoid highlighting everything important until the whole page is colored. If a system needs a complicated legend to make sense, simplify it. The purpose of color is to help you find the next relevant piece of information, not to make every page match a social-media photograph.']},
-{heading:'Keep ideas separate from today’s obligations', paragraphs:['Reserve a few pages for possible projects, reading lists, or things you might explore later. An interesting idea does not automatically deserve a place on today’s task list. Label this section clearly and add a date when you capture something that may become time-sensitive. During your weekly review, choose whether to act on an idea, keep it for later, or let it go. If you plan Pinterest content, separate possible pin topics from confirmed publishing commitments. This stops inspiration from turning into a constant feeling that you are behind. A small collection of useful ideas is better than an enormous list you never look at again.']},
-{heading:'Close the week with a practical review', paragraphs:['Read through unfinished tasks, remove the ones that no longer matter, and move the rest intentionally. Check upcoming commitments against your actual calendar. Note one thing the system helped you remember and one part you can make simpler. You may discover that weekly pages work better than daily ones, or that plain lists suit you more than elaborate spreads. Change the format without buying another notebook first. The editorial image in this guide is an inspiration photograph, not a spread created by the owner or a demonstration of the linked pens. Product listings should be checked for the exact variant and contents before ordering supplies.']},
-]},
-{
-slug:'blush-lavender-home', title:'How to bring blush and lavender into your home', category:'Home & Decor', photo:'decor',
-excerpt:'Use a restrained accent palette, contrasting textures, and the light already in your room.',
-productIds:['throw','candle','desk-lamp'],
-introduction:'Blush and lavender can make a room feel soft without turning every surface pink or purple. The easiest approach is to keep the larger pieces you already own and introduce a small number of coordinated accents. Think about the room’s daylight, existing wood tones, and the colors that will remain visible. A palette should work with your home rather than require replacing everything in it. The linked products are named examples for comparison, not items used in the editorial photograph or personally tested by the owner. Start by rearranging what you have before deciding whether an additional textile, lamp, or candle would be useful.',
-sections:[
-{heading:'Read the colors that are already there', paragraphs:['Stand in the doorway and notice the largest areas: walls, floor, sofa, curtains, and furniture. Warm wood, cool painted surfaces, and patterned upholstery will influence how a pale accent appears. Gather objects you already own in blush, lavender, gray, or soft white and place them together. Look at the arrangement in daytime and again under the room’s usual evening lighting. A color that looks gentle online may feel brighter beside your existing furniture. If you are considering paint, use a real sample according to the manufacturer’s instructions. A screen image is not a reliable substitute for seeing a color in your own light.']},
-{heading:'Choose one leading accent', paragraphs:['Let either blush or lavender do most of the work, then use the other sparingly. For example, a blush throw could be the main accent while a small print or notebook introduces lavender. You do not need matching versions of every object. Repeating one color in two or three places can make a room feel connected without looking staged. If the room already contains strong patterns, choose plainer accents so the eye has somewhere to rest. Avoid buying a full set just to achieve a coordinated look. Separate pieces collected slowly often fit everyday life better than a room assembled around a single shopping basket.']},
-{heading:'Use texture to create variety', paragraphs:['A soft textile, a smooth ceramic surface, and a paper print can provide contrast even within a quiet palette. The linked Bedsure fleece throw is one practical textile option to compare; check its chosen dimensions and care requirements. Texture is especially useful when your larger furniture is already a similar color. Fold a textile so its edge is visible rather than covering every cushion and chair. Consider how it will be cleaned and whether pets or children will use it. An appealing photograph cannot tell you whether a fabric fits your household. Choose materials you are comfortable maintaining, not just the ones that look impressive online.']},
-{heading:'Let lighting support the palette', paragraphs:['Before replacing accessories, look at the bulbs and lamp positions you already use. Light can change the way blush, lavender, and white appear. A desk or table lamp can add a useful pool of light near a reading chair without changing the main room lighting. The linked LEPOWER lamp is a specific option, but compare bulb requirements and finish details with your space. Avoid choosing a lamp based only on a styled listing photograph. Check that the base fits your surface and that the cable reaches safely. A decorative corner should still be functional after sunset, when you are actually using the room.']},
-{heading:'Keep scent and decoration separate decisions', paragraphs:['A candle can be a small accent, but buy it because you want and can safely use a candle, not simply because its label matches your palette. The linked Yankee Candle option is a named example; confirm the scent and size on the listing. Keep candles away from curtains, loose textiles, children, and pets, and never leave a burning candle unattended. If fragrance bothers anyone in the household, a scent-free decorative object is a better choice. Do not assume a candle or diffuser provides a health benefit. A quiet room can feel considered through arrangement and lighting alone, with no fragrance products at all.']},
-{heading:'Edit the room instead of filling it', paragraphs:['Take a photograph from the doorway and notice where the arrangement feels busy. Remove one object before adding another. Keep practical surfaces available for books, drinks, or work, and leave some empty space around your accents. Use the room for several days before deciding whether anything else is missing. If you share photos on Pinterest, photograph your own space and describe the items accurately. The real editorial image here is used as general interior inspiration and does not show the linked products. Always confirm product color, materials, dimensions, and delivery information at the seller’s page before purchasing a piece to complete your palette.']},
-]},
-{
-slug:'satin-pillowcase-guide', title:'Satin or silk pillowcases: what to check before buying', category:'Beauty & Self-care', photo:'home',
-excerpt:'Understand fabric labels, fit, closures, and care before choosing a replacement pillowcase.',
-productIds:['pillowcase','throw'],
-introduction:'Shopping for a smooth pillowcase can be confusing because “satin” and “silk” are often used as though they mean the same thing. They do not. Silk is a fiber, while satin describes a weave that can be made with different fibers. That distinction helps you compare labels without relying on an attractive product photograph. This guide is about materials and practical buying checks, not a promise of better skin, healthier hair, or improved sleep. The linked Bedsure satin pillowcases are a named example to investigate, not a personally tested recommendation. Start with your pillow measurements and the care routine you can realistically maintain.',
-sections:[
-{heading:'Separate the fiber from the weave', paragraphs:['Read the fabric composition rather than stopping at the product title. A satin pillowcase may be made from polyester or another fiber, while a silk pillowcase should identify silk in its composition. Do not treat a shiny appearance as proof of either material. Product titles can include descriptive words that are less precise than the specifications. Check the selected variant because a listing may group several sizes or designs together. If the composition is unclear or different parts of the page disagree, ask the seller or choose a listing with clearer information. A familiar brand name does not remove the need to read the actual material description.']},
-{heading:'Measure your pillow before choosing a size', paragraphs:['Use the dimensions of your pillow, not just the name printed on its packaging. Size names can vary between regions and brands, and an extra-full pillow may fit differently from a flatter one. Compare the listed case measurements with your pillow and allow for the closure design. An envelope closure needs enough overlap to hold the pillow securely; a zipper should close without stretching the fabric tightly. The linked product is an example, so confirm the chosen size on Amazon before ordering. Check how many pillowcases are included as well. A photograph showing a pair does not necessarily mean every available variation contains two.']},
-{heading:'Think about the feel you prefer', paragraphs:['Smoothness, weight, and temperature feel are personal preferences. A product description cannot tell you exactly how a fabric will feel in your room or against your skin. Think about bedding you already like and what you would want to change. If you dislike slippery bedding, a very smooth surface may not be the right choice even when it photographs well. Room temperature, other bed layers, and individual comfort all matter. Avoid buying a pillowcase because of broad claims about beauty or wellness. The useful aim is a cover that fits your pillow and feels pleasant to you, with clear material information and manageable care instructions.']},
-{heading:'Read the care label before purchasing', paragraphs:['Look for washing temperature, drying guidance, and any restrictions on detergents or bleaching. Follow the label for the exact product rather than a general social-media cleaning tip. If your normal laundry routine cannot accommodate the recommended care, choose a different material or product. Consider whether you have space to dry the item as directed and how often you want to rotate cases. A second case may be useful, but only if you actually need it. For other bedroom textiles, such as the linked Bedsure throw, check that product’s separate care instructions. Similar-looking fabrics do not necessarily tolerate the same washing or drying treatment.']},
-{heading:'Treat beauty claims cautiously', paragraphs:['A pillowcase is a household textile, not a medical treatment. Claims about preventing wrinkles, treating acne, or repairing hair should not be assumed from smooth fabric or an appealing review. If you have ongoing skin or hair concerns, ask a qualified professional rather than using a shopping guide as personalized advice. You can still choose a fabric for comfort, appearance, or ease of care without attaching a health promise to it. Notice whether a review discusses the exact size and material you are considering. General enthusiasm about a brand may tell you very little about the specific variant in your shopping basket.']},
-{heading:'Make a short comparison before you order', paragraphs:['Write down the composition, size, closure, included quantity, and care requirements of the options you are considering. Compare those details alongside the seller’s delivery and returns information. Leave out products with unclear specifications rather than trying to guess from photographs. If your current case is clean, comfortable, and still in good condition, replacing it is optional. The linked example is a curated shopping reference, and the room image is a real editorial inspiration photograph rather than a demonstration of that item. No personal-use or health-benefit claims are made here. Check the listing again before purchasing because available variants and seller details can change.']},
-]},
-{
-slug:'small-space-reset', title:'A practical small-space reset for a calmer home', category:'Home & Decor', photo:'decor',
-excerpt:'Clear one useful surface, rethink storage, and make your favorite corner easier to use.',
-productIds:['throw','desk-lamp','notebook'],
-introduction:'When a small room feels crowded, adding another organizer is not always the answer. Often the better first step is deciding what the room needs to do and removing objects that make those activities harder. A reset can happen in an afternoon without a furniture purchase. This guide focuses on a usable surface, an accessible seat, and a simple routine for returning things to their homes. The linked throw, lamp, and notebook are optional curated examples for actual gaps, not a complete shopping list or personally tested solutions. Work with your existing belongings first, and measure carefully before introducing anything new.',
-sections:[
-{heading:'Name the room’s main job', paragraphs:['Choose the two or three activities that matter most in the room. A bedroom might need to support sleeping, dressing, and a little reading; a combined living area might need seating and occasional work. Keep those activities in mind while deciding what stays within reach. If a decorative arrangement blocks the only usable desk, it is competing with the room’s main job. Move it before buying storage. Shared spaces need a shared decision, so ask other household members what they use most. A room can be attractive without having a separate corner for every hobby or every type of inspiration you see online.']},
-{heading:'Clear one surface completely', paragraphs:['Start with a bedside table, desk, or shelf rather than emptying the whole room at once. Sort what you remove into items that belong there, items that belong elsewhere, and items you no longer need. Wipe the surface according to its material and return only the things that support its purpose. Keep daily-use items at the front and occasional items elsewhere. If the surface fills up again immediately, the problem may be that nearby objects do not have a reliable home. Solve that one issue before choosing another container. Empty space is useful: it gives you somewhere to put a book or set down what you are carrying.']},
-{heading:'Check the paths through the room', paragraphs:['Walk from the door to the places you use most often. Notice cables, trailing fabric, and furniture corners that make the route awkward. Leave space for drawers and doors to open properly. If a throw hangs into the walkway, fold it over the chair instead. The linked Bedsure throw is an example if you need a textile, but dimensions are important in a compact room. Do not place storage baskets where your feet naturally land when getting out of bed. Avoid moving heavy furniture without suitable help. A visually tidy room is not a successful reset if it creates a less safe or less convenient route.']},
-{heading:'Create storage around real habits', paragraphs:['Put items where you already use them when practical. A notebook near the place where you plan your day is more useful than one stored in a decorative box across the room. The linked LEUCHTTURM1917 notebook is one optional example, but loose notes can also live in a folder you already own. Group objects by activity rather than by how they look together. Keep a small return basket only if you will actually empty it; otherwise it can become a permanent pile with handles. Before purchasing organizers, measure both the space and the objects they need to hold. Stacking more containers does not reduce the number of belongings.']},
-{heading:'Improve one useful pool of light', paragraphs:['A dim corner can feel neglected even after it is tidy. Try repositioning a lamp you already own so it reaches your reading or work surface. The linked LEPOWER lamp is a named example to compare if an additional light is genuinely missing. Check its footprint, cable length, and bulb requirements against the space. Keep cords out of walking routes and do not trap them beneath furniture. Natural light can help during the day, but you still need to evaluate how the room functions at night. Lighting should support what you do there rather than exist only to make the room look good in a photograph.']},
-{heading:'Keep the maintenance routine modest', paragraphs:['At the end of a week, return a few displaced items and see which ones never seem to find their way back. Adjust their storage rather than blaming yourself for the mess. A short reset of one surface is easier to maintain than a complicated system spread across the room. Photograph the arrangement if that helps you remember where things go, but do not expect it to remain untouched. Homes are used, not displayed. The editorial photo in this guide is general inspiration and does not show the linked products. Check each product’s specific measurements and selected variant before ordering anything to fill a confirmed gap.']},
-]},
-{
-slug:'pinterest-to-real-room', title:'Turn a Pinterest mood board into a room that feels like you', category:'Home & Decor', photo:'desk',
-excerpt:'Find the repeated details, measure your space, and separate inspiration from things you actually need.',
-productIds:['notebook','throw','pastel-highlighters'],
-introduction:'A Pinterest board can collect hundreds of beautiful rooms while leaving you unsure what to do with your own. The solution is not to recreate one photograph exactly. It is to identify the details you keep returning to and translate those into choices that suit your space. Perhaps you like soft textiles, warm wood, or a clear desk more than any particular product. This guide helps you move from saved images to a practical plan without treating every pin as a shopping instruction. The product links are named curated examples, not the exact items in the photographs or products the owner has personally used.',
-sections:[
-{heading:'Make a small working board', paragraphs:['Choose a limited group of images that reflect how you want the room to feel and function. Separate that working board from your larger collection so unrelated ideas do not compete for attention. Include a few images that show complete spaces, not only close-ups of styled shelves. Look for rooms with constraints similar to yours, such as small desks, shared seating, or limited daylight. When saving a pin, follow its original source when possible instead of assuming the caption contains accurate product details. A photograph can be useful inspiration even when you cannot or do not want to buy anything shown inside it.']},
-{heading:'Write down the patterns you notice', paragraphs:['Review the board and list recurring colors, materials, lighting choices, and arrangements. Be specific: “one soft textile on a simple chair” is more useful than “cozy aesthetic.” A notebook can hold these observations, and the linked LEUCHTTURM1917 is an optional example if you need one. You can also use a sheet of paper or a document on your phone. Rank the details by what you genuinely care about. If the same wooden surface appears repeatedly, perhaps natural texture is more important to you than a particular color palette. Naming that preference helps you make better use of furniture you already own.']},
-{heading:'Measure before matching the photograph', paragraphs:['Write down the available floor area, the width of useful surfaces, and the space needed to open doors or drawers. Note the location of sockets and the routes people walk through the room. Photographs can make furniture appear smaller or leave practical details outside the frame. Compare any prospective purchase with your measurements rather than the proportions you imagine from an image. Try marking a furniture footprint with removable tape that is safe for your floor finish. If it blocks daily movement, revise the idea before ordering. A room plan should fit the life happening inside it, not only the angle from which you would photograph it.']},
-{heading:'Shop your home first', paragraphs:['Move a cushion, basket, print, or lamp from another room and see whether it brings in one of the details you identified. Fold an existing throw differently, clear a shelf, or group books near the place you read. If a textile is genuinely missing, the linked Bedsure throw is one specific example to compare, not an instruction to replace bedding you already like. Check dimensions, material, and care requirements before purchasing. Reusing belongings also helps you discover whether you like an idea in practice. A setup that feels charming in a saved photograph may be inconvenient when you live with it every day.']},
-{heading:'Separate needs from decorative possibilities', paragraphs:['Create two lists: things required for the room to work and optional details you might add later. A functional light or a suitable storage location belongs on the first list when it solves a real problem. Matching stationery or another ornament usually belongs on the second. If colors help you plan, the linked Zebra Mildliner markers are an example to investigate, but ordinary pen labels do the job too. Avoid turning the optional list into a deadline. Let the space remain partly unfinished while you learn what matters. A room can feel personal without every item being coordinated or every corner having something new in it.']},
-{heading:'Share your own version honestly', paragraphs:['When the space is ready, photograph what you actually arranged in natural light where possible. Keep captions clear about which items you own, which are similar suggestions, and which links may become affiliate links. Do not use a retailer photo or someone else’s room image as though it is your own makeover. The photographs used on this website are credited editorial inspiration images, not personal photos or evidence of product testing. Visit the linked product page to confirm exact details before buying. Your finished room should feel easier to use and more like your own preferences—not like proof that you successfully copied somebody else’s board.']},
-]},
+  {
+    slug: 'cozy-desk-setup',
+    title: '5 Ways I’m Making My Desk Nook Feel So Cozy',
+    category: 'Stationery & Desk',
+    photo: 'desk',
+    excerpt: 'Simple ways to make your workspace feel more like a place you actually want to spend time.',
+    productIds: ['hydrangea-notebook', 'souffle-pens', 'blush-bouquet-candle'],
+    introduction: 'Oh, hi! It’s Sandy from Lavenderlinenandlife. I’ve been spending way too much time at my little desk lately, and I realized it was starting to feel a bit too much like a cold office. I want my workspace to be a little corner where I can actually feel creative and relaxed, even when I have a to-do list a mile long. You know that feeling when you just want a space that feels like a big, warm hug? That’s what I’m going for. I’ve been eyeing some lovely things like the Rifle Paper Co. Pink Hydrangea Spiral Notebook, some Sakura Gelly Roll Souffle Pastel Pens (10 pack), and even a Yankee Candle Blush Bouquet Large Tumbler Candle to keep things sweet while I work. I haven’t tried these yet, they are just on my wishlist, but I think they’d be so lovely to have around. Let me share what I’m planning, and remember, this is all about what feels good to you, not just making it look right for a photo.',
+    sections: [
+      {
+        heading: 'Clear the Clutter (Seriously, Just Try It)',
+        paragraphs: [
+          'I know, I know, everyone says this, but it’s true. I started by taking everything—and I mean everything—off my desk. It’s wild how much stuff just ends up in a pile, isn’t it? I only put back what I truly use every single day. The rest? Gone into a little drawer where it won’t distract me. When I have that clear surface, it’s like my mind clears up, too. I think we often try to organize our clutter rather than just getting rid of it.',
+          'And once it was clear, I felt so much better. I think I’ve been trying to keep too much "just in case" stuff on my desk, but honestly, how many staplers do I really need within arm’s reach? Now, it’s just the basics. A spot for my laptop, a little space for my new Rifle Paper Co. Pink Hydrangea Spiral Notebook, and a pen holder. That’s it. It’s so much more peaceful, and I don’t find myself constantly pushing papers around just to find a spot to put my coffee.',
+          'If you’re feeling a bit overwhelmed, just try clearing one corner. You don’t need to do the whole thing at once. Just start small. Maybe just a little square of your desk. See how that feels, and then go from there. It’s all about finding that balance between having what you need and not letting it take over your life.'
+        ]
+      },
+      {
+        heading: 'Bring in the Light',
+        paragraphs: [
+          'Lighting changes everything, right? I hate that harsh, bright overhead light that makes me feel like I’m in a doctor’s office. I’ve been looking for a nice, adjustable lamp that gives me a warm, soft glow. When it’s dark outside, having just that little pool of light on my work area makes such a difference. It makes it feel like it’s just me and my work, and not like I’m sitting in the middle of a busy, bright room.',
+          'And then, when I’m feeling a bit fancy, I’ll light my Yankee Candle Blush Bouquet Large Tumbler Candle. It doesn’t just smell amazing—like, really sweet and fresh—but the glow from the candle is just so calming. It’s like a little ritual for me. I’ll light it, get my tea, and settle into my work. It makes the whole afternoon feel special, even if I’m just answering emails.',
+          'Just remember to be careful with where you put your candle. I keep mine well away from any papers or anything that could catch fire. It’s not worth the risk, no matter how much I love the scent! I think the key is just finding that little bit of light that works for you.'
+        ]
+      },
+      {
+        heading: 'Add Little Touches of Color (Because Why Not?)',
+        paragraphs: [
+          'I’m a huge fan of soft colors. I’m thinking of getting some Sakura Gelly Roll Souffle Pastel Pens (10 pack). The colors are just so pretty, and they have that fun, creamy look. Using a nice pen makes a difference, even if it’s just for jotting down a grocery list or a quick note. It’s a little treat for myself. Plus, they look so lovely resting next to my hydrangea notebook.',
+          'I used to think that "organized" meant "boring," but I’m realizing that’s not true at all. You can have a functional workspace that’s also colorful and fun. It’s all about finding what makes you smile. Maybe for you, it’s a bright mug or a funny little desk accessory. It doesn’t have to be expensive, and it doesn’t have to be brand new.',
+          'I think we spend too much time worrying about whether our workspace looks professional. Who cares? If it works for you and makes you happy, that’s all that matters. My desk isn’t perfect, and there are often papers scattered around by the end of the day, but that’s okay. It means I’ve been busy!'
+        ]
+      },
+      {
+        heading: 'Stay True to You',
+        paragraphs: [
+          'I think the most important thing I’ve learned is that I can’t just copy what someone else is doing. I’ve seen so many photos of perfect desks online, and I used to try to make mine look just like them. But it never really felt like mine, you know? Now, I’m trying to focus on what I actually need and what I actually love. It’s okay if my desk doesn’t look like a Pinterest board.',
+          'I’m still figuring it out, and that’s perfectly fine. I’m constantly moving my lamp, swapping out my pens, and trying to find the best spot for my notebook. It’s a journey, not a destination. And honestly, I think that’s the fun part of it. My workspace is always changing, just like I am.',
+          'Don’t be afraid to try new things and see what sticks. If something isn’t working, change it! It’s your space. Take a little bit of time today to just sit at your desk and think about what you actually want. You might be surprised by what you come up with.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'style-a-reading-nook',
+    title: 'My Little Reading Corner Refresh',
+    category: 'Home & Decor',
+    photo: 'home',
+    excerpt: 'Turning a quiet corner into the ultimate reading retreat.',
+    productIds: ['sherpa-throw', 'velvet-pillow-covers', 'lavender-diffuser'],
+    introduction: 'Hi friends! Sandy here. If you know me, you know that my absolute favorite way to spend an afternoon is curled up with a good book. I’ve been thinking a lot about my reading corner lately. It’s always been okay, but I really wanted to turn it into something a bit more... well, magical. Not "Pinterest-perfect" magic, but "I want to nap here for three hours" magic. I’ve been dreaming about getting a really soft L’COZEE Lavender Sherpa Plush Throw, maybe some pretty Nestinco Blush Pink Velvet Pillow Covers (set of 2), and oh, definitely an ASAKUKI Essential Oil Diffuser with Lavender Oil to make the whole area smell like a dream. None of these are things I own yet, they’re just on my very long wishlist. But honestly, even just imagining it makes me want to start a new book right now! Let’s talk about how to make your own little reading nook, with whatever space you have.',
+    sections: [
+      {
+        heading: 'Find Your Perfect Spot',
+        paragraphs: [
+          'You don’t need an entire spare room for a reading nook. My nook is just a corner of my living room, but honestly, it’s the best spot in the house. I found a chair that I just love, and I added a little stool for my feet. That’s all you really need! The important thing is that it’s comfortable. If you’re not comfortable, you’re not going to read for very long. I like to keep my nook away from the main traffic of the house so I can actually concentrate on my story. It’s my little getaway, even when I’m still at home.',
+          'I think it’s easy to feel like we need a huge, dedicated space to create a special spot. But honestly, even a corner of the bedroom or a quiet spot by a window can be perfect. I’ve even seen people create little nooks in a walk-in closet! Just find a place where you can be undisturbed for a little while, and that’s a win.',
+          'I love to think about what makes me feel relaxed. Is it sunlight? Is it quiet? Once you find that, you’ll know where your perfect spot is. And don’t be afraid to experiment! Move your chair around a bit until you find the spot that just feels right.'
+        ]
+      },
+      {
+        heading: 'Softness Is the Key',
+        paragraphs: [
+          'I cannot emphasize enough how much I love a good, soft throw blanket. I’ve been looking at the L’COZEE Lavender Sherpa Plush Throw, and it just looks so warm. I love the idea of draping it over the back of my chair. And the Nestinco Blush Pink Velvet Pillow Covers? Those would look so good on my chair. They add such a lovely touch of texture, you know? It’s not just about the color, it’s about how it feels when you’re relaxing.',
+          'You don’t need to replace your whole sofa, just adding one or two soft touches can really change the feel of the whole corner. I love how adding a velvet pillow or a soft blanket can make a space feel so much more inviting. It’s like it’s inviting you to stay for just a little while longer.',
+          'Plus, it’s a great way to add some color without painting the walls. I love my blush and lavender, but you can choose whatever colors make you happy! The goal is just to create a space that feels like a big, cozy hug.'
+        ]
+      },
+      {
+        heading: 'Scent and Atmosphere',
+        paragraphs: [
+          'I’ve really been getting into aromatherapy lately. I haven’t tried the ASAKUKI Essential Oil Diffuser yet, but I’ve heard such great things about having a little bit of lavender scent in the air. I think it would be so relaxing while I’m reading. Just a little hint of lavender, maybe a cup of herbal tea... it’s like a spa day right in my living room.',
+          'I do want to make sure I’m using it safely, though, so I’ll be careful about where I put it. It’s always better to start with just a little bit and see how you like it. You don’t need a strong scent to have an impact. Sometimes just a very subtle hint is enough.',
+          'And don’t forget that you can also add other things to the atmosphere. Maybe a little bit of soft music in the background? Or keeping the blinds closed if you want a cozy, quiet vibe? It’s all about creating the environment that works for you.'
+        ]
+      },
+      {
+        heading: 'Making It Your Own',
+        paragraphs: [
+          'The best thing about a reading nook is that it’s yours. If you want to pile up five different pillows, go for it! If you prefer a more minimalist look, that’s totally fine too. It’s not about following a set of rules; it’s about creating a space where you feel happy. I’ve spent way too much time worrying about what my home "should" look like, and I’m trying to move away from that. I just want my home to feel like a reflection of the things I love.',
+          'And right now, I love cozy throws and soft lavender scents. It makes me feel at home in my own space. Don’t be afraid to put your own spin on things! Maybe you want to add some fairy lights, or some favorite photos. It’s your nook, so make it a place that makes you feel like you.',
+          'And if you find yourself changing things around a lot, that’s okay too. My nook is always evolving, and I think that’s part of the fun of it. It’s a living, breathing space that changes with me.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'gentle-evening-routine',
+    title: 'My Gentle Evening Rituals',
+    category: 'Beauty & Self-care',
+    photo: 'home',
+    excerpt: 'How I wind down after a long day without any stress.',
+    productIds: ['fleece-throw', 'laura-mercier-blush', 'blush-bouquet-candle'],
+    introduction: 'Hi there! Sandy again. You know, I used to think that an "evening routine" meant I had to have a complex skincare ritual or a super structured plan. But lately, I’ve realized that for me, it’s just about being kind to myself before bed. It’s the simple things: a warm throw, maybe a little bit of pampering if I feel like it, and a nice, relaxing candle. I’ve been looking at the Thesis Fleece Throw Blanket, Blush, because it looks so incredibly soft. And I’ve been really wanting to try the Laura Mercier Blush Colour Infusion for those days when I want to feel a little bit fancy, even if I’m just staying home. And of course, a Yankee Candle Blush Bouquet Large Tumbler Candle is always on my mind to keep things feeling cozy. Let’s talk about how to make your evening a bit more gentle.',
+    sections: [
+      {
+        heading: 'Keeping It Low-Pressure',
+        paragraphs: [
+          'I used to get so stressed about my evening routine. Like, if I didn’t follow every single step, I felt like I was failing. Does anyone else feel like that? Now, I try to keep things super low-pressure. If I just want to sit on the sofa with my Thesis Fleece Throw Blanket, Blush, that’s my routine! I’m trying to let go of the idea that I have to be "productive" even in my downtime.',
+          'Sometimes, the best routine is just giving yourself permission to do nothing. And honestly, isn’t that the dream? I’ve found that when I take the pressure off, I actually enjoy my evenings so much more. It’s not about checking off a to-do list; it’s about taking care of myself in a way that feels good.',
+          'And if I don’t get to everything I wanted to do? That’s okay! There’s always tomorrow. I’m learning to be a bit more patient with myself, and I think that’s been the biggest change of all.'
+        ]
+      },
+      {
+        heading: 'A Little Bit of Pampering',
+        paragraphs: [
+          'Sometimes, I do like to do a little something for myself. I’ve been thinking about the Laura Mercier Blush Colour Infusion. Even if I’m just washing my face, sometimes putting on a little bit of blush in the morning or just refreshing my look for dinner makes me feel a bit more... I don’t know, pulled together? I’m definitely not an expert at all, I just enjoy the process. It’s like a little moment of taking care of myself.',
+          'I think we all need those little moments, don’t you? It doesn’t have to be a big, expensive beauty routine. It can just be something that makes you feel a little bit better, a little bit more like yourself. And I think that’s all that really matters.',
+          'I’m definitely not saying you have to wear makeup all the time! Sometimes, the best routine is a fresh face and no makeup at all. It’s just about what makes YOU feel good. And for me, right now, that includes a little blush when I’m in the mood.'
+        ]
+      },
+      {
+        heading: 'Setting the Mood',
+        paragraphs: [
+          'I love how a candle can change the feel of a room. Like I said, I’m a huge fan of the Yankee Candle Blush Bouquet Large Tumbler Candle. It’s just so sweet and welcoming. I usually light it for just a little while before I head to bed. It helps me signal to my brain that it’s time to relax. And of course, I’m always super careful. I never leave it burning if I’m not in the room.',
+          'Safety is key when you’re trying to be cozy! I love the scent, but I always make sure I’m keeping an eye on it. It’s a small price to pay for such a lovely atmosphere. And even if I don’t light a candle, I try to make sure my space feels inviting, whether it’s with some soft light or just by keeping things tidy.',
+          'I’ve noticed that when my space feels calm, I feel calm. And that’s a big part of how I wind down after a long day. It’s like I’m creating a sanctuary that helps me let go of the day’s stress.'
+        ]
+      },
+      {
+        heading: 'Being Okay with Imperfection',
+        paragraphs: [
+          'My evenings are definitely not perfect. Sometimes I’m too tired to do anything, and that’s okay. Sometimes I’m on my phone way too long, and that’s okay, too. I think we need to be a bit more gentle with ourselves. We don’t have to follow a set of rules. I’m just trying to make my evenings feel a little more like a treat, and a little less like a list of chores. If I can do that, I’m happy.',
+          'I’m constantly trying to find new ways to make my evenings a little bit more relaxing. I’ve tried reading, listening to podcasts, and even just sitting in silence. Some things work, some things don’t. And that’s perfectly fine! It’s all about finding what works for you.',
+          'I hope you can find your own little way to relax, too. Whether it’s with a soft blanket, a favorite book, or just a quiet cup of tea, you deserve those little moments of peace. Let’s all try to be a bit kinder to ourselves, shall we?'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'paper-planning-that-works',
+    title: 'How I Actually Get Organized (And Stay That Way!)',
+    category: 'Stationery & Desk',
+    photo: 'planning',
+    excerpt: 'One planner, a few simple habits, and a system that actually fits my messy, wonderful life.',
+    productIds: ['life-planner', 'souffle-pens', 'hydrangea-notebook'],
+    introduction: 'Oh, friends, planning has always been a bit of a struggle for me! I’d buy these beautiful, expensive planners, use them for about three weeks, and then—oops—they’d end up in the drawer. But I think I’ve finally found a way that actually works for me, and I wanted to share it. It’s not about fancy, complicated systems. It’s just about having a place to keep track of the things that matter, and maybe a few pretty things to make the process a little more fun. I’ve been eyeing the Erin Condren 12-Month Soft Bound Life Planner, Blush, some Sakura Gelly Roll Souffle Pastel Pens (10 pack), and a Rifle Paper Co. Pink Hydrangea Spiral Notebook. I haven’t tried them yet, but they seem like they’d make planning a little bit more enjoyable. Let’s talk about my simple approach to staying organized without the stress!',
+    sections: [
+      {
+        heading: 'Find a Planner You Actually Like',
+        paragraphs: [
+          'This might sound obvious, but it took me a long time to realize it! If you don’t like the look and feel of your planner, you won’t use it. For a long time, I bought these really serious, "professional" planners that just felt like a chore to open. Now, I’m focusing on finding something that makes me happy. I think the Erin Condren 12-Month Soft Bound Life Planner, Blush, looks so lovely—it’s simple, elegant, and I love the color!',
+          'I think it’s important to have a planner that fits your needs. Do you need lots of space for appointments? Or are you more into task lists? I’ve realized that for me, a simple layout works best. I like having a place to see my whole week at a glance, and enough room to jot down a few things for each day. It’s all about finding what works for YOU.',
+          'And don’t feel like you have to stick with one type of planner forever. If your needs change, your planner can change, too. It’s your tool, and it should work for you.'
+        ]
+      },
+      {
+        heading: 'Make It Fun with Nice Supplies',
+        paragraphs: [
+          'I’ve realized that I’m much more likely to use my planner if I actually like the supplies I’m using with it. I have a thing for nice pens, and I’ve been really wanting to try the Sakura Gelly Roll Souffle Pastel Pens (10 pack). The colors are so soft and pretty, and they make planning feel less like a chore and more like a creative outlet. It’s such a small thing, but it really makes a difference.',
+          'I also love having a little notebook, like the Rifle Paper Co. Pink Hydrangea Spiral Notebook, for when I have random ideas or need to make a quick list. It’s so nice to have a dedicated place for that, so it doesn’t clutter up my main planner. It’s all about finding what works for you and having a little fun with it.',
+          'Just don’t go overboard! I’ve definitely had those moments where I bought way too many stationery supplies and then didn’t know what to do with them. It’s better to have a few things you love and actually use than a drawer full of unused stuff.'
+        ]
+      },
+      {
+        heading: 'Keep It Simple',
+        paragraphs: [
+          'I think the biggest mistake I made when I was starting out was trying to make my planner look like a work of art. I’d spend hours decorating pages, and then I wouldn’t actually have any time to plan! Now, I’m trying to keep things simple. It’s all about function, not perfection. If I have a busy week, my planner might just have a few scribbles in it, and that’s perfectly fine.',
+          'I try to do a little bit of planning at the beginning of each week, and then I just check in with it every day. It doesn’t have to take long. In fact, if it takes more than a few minutes, I’m probably doing it wrong. The goal is to make my life easier, not more complicated.',
+          'And if I miss a day? Or even a whole week? It’s okay! I just start again. It’s a tool, not a judge. I’m trying to be a bit more gentle with myself and accept that life is messy and unpredictable, and that’s okay.'
+        ]
+      },
+      {
+        heading: 'A Little Bit of Reflection',
+        paragraphs: [
+          'One of the things that’s helped me the most is taking a little bit of time at the end of each week to look back. I’ll see what I got done, what didn’t get done, and what I want to focus on for next week. It’s so helpful to see how much I’ve accomplished, even on those weeks when I feel like I didn’t get much done.',
+          'I’ve also started writing down a few things that I’m grateful for each week, even if it’s just something small. It’s such a simple way to keep things in perspective and remind myself of all the good things in my life. It’s not about being perfect; it’s about acknowledging the good.',
+          'I hope you find some of these tips helpful. And remember, the most important thing is that your planning system works for YOU. It doesn’t have to be perfect, it just has to be useful. So don’t stress, have a little fun, and find what works for you!'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'blush-lavender-home',
+    title: 'Adding a Little Blush and Lavender to My Home',
+    category: 'Home & Decor',
+    photo: 'decor',
+    excerpt: 'How I’m gently introducing my favorite colors into my home.',
+    productIds: ['sherpa-throw', 'blush-bouquet-candle', 'lavender-diffuser'],
+    introduction: 'Oh, hi again! Sandy here. You know how much I love blush and lavender? I think they’re just the most calming, sweet colors. I’ve been wanting to bring a bit more of that energy into my home, but without it feeling like I’m living in a dollhouse. I’ve been trying to find ways to add these colors in a subtle, intentional way. I’ve been eyeing some lovely things like the L’COZEE Lavender Sherpa Plush Throw, the Yankee Candle Blush Bouquet Large Tumbler Candle, and the ASAKUKI Essential Oil Diffuser with Lavender Oil. I haven’t tried these yet, they are just on my wishlist, but I think they would be such a lovely, cozy addition. Let me share how I’m approaching this—and remember, this is all about what feels good in YOUR space.',
+    sections: [
+      {
+        heading: 'Start with Small, Cozy Touches',
+        paragraphs: [
+          'I’ve realized that you don’t need to repaint your whole house to add color! In fact, I think it’s much better to start small. I’ve been looking for things like the L’COZEE Lavender Sherpa Plush Throw because it’s a great way to add a pop of lavender without a big commitment. Plus, it’s just so cozy! I love the idea of draping it over my sofa or my reading chair.',
+          'And I think it’s so important to think about the colors that are already in your home. You don’t need to clash with what you have. I have a lot of neutral colors in my living room, so adding a little blush and lavender feels really natural. It’s like adding a little bit of warmth and life without being overwhelming.',
+          'Just try adding one thing at a time. Maybe a throw, or a few pillows, and see how it feels in your space. You might be surprised by how much of a difference it makes!'
+        ]
+      },
+      {
+        heading: 'Scent Is Part of the Decor',
+        paragraphs: [
+          'I’ve been learning that scent can really change the feel of a room, too. Like I said, I’m really excited about the ASAKUKI Essential Oil Diffuser with Lavender Oil. Lavender is just so calming, and I think it would be such a lovely addition to my living room. And of course, the Yankee Candle Blush Bouquet Large Tumbler Candle is another great way to add a bit of scent and atmosphere.',
+          'I love how these little touches can make a space feel so much more like a sanctuary. It’s like you’re creating an experience, not just decorating a room. It’s a great way to make your home feel a little bit more like "you."',
+          'And I’m always so careful about where I use scent. You don’t need much, and it’s important to make sure it’s something that everyone in your home enjoys. It’s all about creating an atmosphere that’s comfortable for everyone.'
+        ]
+      },
+      {
+        heading: 'Mix and Match (But Keep It Simple!)',
+        paragraphs: [
+          'I think the most important thing I’ve learned is that you don’t need everything to match perfectly. In fact, I think it’s much more interesting when things don’t match! I love mixing and matching different textures and shades of blush and lavender. It makes the space feel more personal and less staged.',
+          'I’ve been trying to keep things simple and not go overboard. It’s easy to get excited and buy everything you see, but that just leads to a cluttered and overwhelming space. Now, I’m trying to be a bit more thoughtful about what I add to my home. If I love it, and it fits with what I already have, then it’s a yes!',
+          'And don’t be afraid to try new things! If something isn’t working, you can always move it to a different room or try something else. That’s the beauty of it—nothing is permanent, and you can always change it if you need to.'
+        ]
+      },
+      {
+        heading: 'Always Stay True to YOU',
+        paragraphs: [
+          'I think the biggest lesson I’ve learned is that the most important thing is that my home feels like ME. It’s not about following the latest trends or what’s popular on Pinterest. It’s about creating a space where I feel comfortable, happy, and at peace.',
+          'And if that means I love blush and lavender, then that’s what I’m going to do! I’ve learned to embrace the things I love, even if they’re not the "coolest" thing right now. It’s my home, and it’s all about what makes ME feel happy.',
+          'I hope you’re able to do the same in your home. Don’t be afraid to add the colors, textures, and things that make you smile. After all, that’s what home is all about!'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'cozy-bedtime-touches',
+    title: 'My Favorite Little Touches for a Cozy Bedtime',
+    category: 'Home & Decor',
+    photo: 'home',
+    excerpt: 'Simple, cozy additions to help make your bedroom feel like a little retreat.',
+    productIds: ['fleece-throw', 'velvet-pillow-covers', 'lavender-diffuser'],
+    introduction: 'Oh, hi friends! Sandy here. Is there anything better than heading to bed in a room that feels like a little sanctuary? I’ve been trying to make my bedroom feel a bit more cozy, especially since it’s where I spend all my time relaxing at the end of the day. I’ve been looking at some lovely things—the Thesis Fleece Throw Blanket, Blush, some Nestinco Blush Pink Velvet Pillow Covers (set of 2), and the ASAKUKI Essential Oil Diffuser with Lavender Oil. I haven’t tried these yet, they are just on my wishlist, but I think they would be such a lovely addition. Let me share how I’m approaching this, and remember, this is all about creating a space that feels like a big, warm hug for YOU.',
+    sections: [
+      {
+        heading: 'Soft, Cozy Layers Are Everything',
+        paragraphs: [
+          'I’ve realized that the secret to a cozy bedroom is all about the layers. I love having a few different throws and pillows to mix and match. I’ve been really wanting to get the Thesis Fleece Throw Blanket, Blush, because it just looks so soft and warm. And the Nestinco Blush Pink Velvet Pillow Covers (set of 2) would be a perfect addition to my bed! They add such a lovely, soft touch to the whole room.',
+          'I think it’s so important to have a space that feels inviting. When I walk into my room, I want to feel like I can just curl up and relax. And I’ve found that having those soft, cozy layers makes such a difference. It’s like it’s inviting you to take a break and just breathe.',
+          'And don’t be afraid to experiment with different textures! You might be surprised by how much of a difference it makes to have a soft fleece throw next to some velvet pillows. It’s all about creating that inviting, cozy feel.'
+        ]
+      },
+      {
+        heading: 'Creating a Calming Atmosphere with Scent',
+        paragraphs: [
+          'As I’ve said before, I’m a huge fan of using scent to help me relax. I’m really excited about the ASAKUKI Essential Oil Diffuser with Lavender Oil for my bedroom. I think having a little bit of lavender scent in the air will be so calming, especially after a busy day. It’s such a simple way to create a more relaxing, tranquil atmosphere.',
+          'I’m always so careful about where I use scent, though. I like to keep it subtle and not too overwhelming. It’s all about creating a gentle, relaxing environment, not a strong scent that’s going to distract me.',
+          'And I think the most important thing is that it feels right for you. If you don’t like lavender, that’s perfectly fine! There are so many other scents you can try. It’s all about finding what helps you feel most calm and relaxed.'
+        ]
+      },
+      {
+        heading: 'Keep It Simple and Uncluttered',
+        paragraphs: [
+          'I’ve also realized that a calm bedroom needs to be an uncluttered one. I try to keep my bedside table clear and only keep the essentials there. It’s so much easier to relax when your room isn’t full of clutter. I think we often forget how much of an impact a tidy space has on our mental health.',
+          'I try to do a little bit of a "reset" every day, just putting things back in their place. It doesn’t take long, but it makes such a difference! I’ve found that it really helps me to feel a little more in control and a little less stressed.',
+          'And don’t feel like you have to be perfect. If your room isn’t perfectly tidy, that’s okay! Just do what you can, and don’t stress about it. It’s all about creating a space that makes you feel happy and relaxed.'
+        ]
+      },
+      {
+        heading: 'A Final Thought on Self-Care',
+        paragraphs: [
+          'I think the most important thing is to remember that your bedroom should be a place where you can truly be yourself and take care of yourself. It’s not just a place to sleep; it’s a sanctuary. And I’m so happy to be finding new ways to make it feel more like that.',
+          'I hope some of these ideas are helpful for you, too! And remember, there’s no right or wrong way to do this. It’s all about what makes you feel comfortable, happy, and at peace. So take your time, have a little fun with it, and create a space that’s all your own!',
+          'I’d love to hear what your bedroom looks like! Let me know if you have any favorite cozy touches.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'small-space-reset',
+    title: 'My Simple Reset for a Smaller Home',
+    category: 'Home & Decor',
+    photo: 'home',
+    excerpt: 'How I keep my small home feeling calm and organized.',
+    productIds: ['sherpa-throw', 'blush-bouquet-candle', 'velvet-pillow-covers'],
+    introduction: 'Oh, hi friends! Sandy here. You know, I live in a smaller home, and it can definitely get a bit crowded sometimes! I’ve been really thinking about how to keep things feeling calm and organized, even when space is tight. It’s all about being a little bit more intentional with what I have and how I use it. I’ve been eyeing some lovely things to help with this—the L’COZEE Lavender Sherpa Plush Throw, the Yankee Candle Blush Bouquet Large Tumbler Candle, and the Nestinco Blush Pink Velvet Pillow Covers (set of 2). I haven’t tried them yet, they are just on my wishlist, but I think they would be such a lovely, cozy addition. Let me share how I’m approaching this, and remember, this is all about what feels good in YOUR space.',
+    sections: [
+      {
+        heading: 'Focus on What Truly Matters',
+        paragraphs: [
+          'When space is limited, I’ve found that it’s so important to be intentional about what I have. I’ve been trying to focus on keeping only the things that I truly love and that serve a purpose. It’s all about getting rid of the clutter and making room for what really matters.',
+          'I love things that are both beautiful and practical, like the L’COZEE Lavender Sherpa Plush Throw. It’s a great way to add some coziness, and it’s also something that I use every day! I’m trying to be a bit more selective about what I add to my home, and I think that’s really helped.',
+          'And don’t be afraid to donate or sell things that you’re not using. It’s such a great way to clear out your space and help someone else at the same time!'
+        ]
+      },
+      {
+        heading: 'Create Atmosphere with Scent and Light',
+        paragraphs: [
+          'Even in a small space, you can create a lovely atmosphere with a few simple things. I’m a big fan of using a candle, like the Yankee Candle Blush Bouquet Large Tumbler Candle, to add some scent and warmth. It’s such an easy way to make a space feel more inviting and comfortable.',
+          'I think it’s also important to think about the light in your home. I try to make the most of the natural light, and when it gets dark, I love having some soft, warm light to make things feel cozy. It’s all about creating the atmosphere that makes you feel at home.',
+          'And again, just remember to be safe with your candles! I love the scent and the atmosphere, but I always make sure I’m being careful.'
+        ]
+      },
+      {
+        heading: 'Add Texture and Color Without the Clutter',
+        paragraphs: [
+          'I’ve found that you can add so much personality to a small space with just a few well-chosen pieces. I’m really excited about the Nestinco Blush Pink Velvet Pillow Covers (set of 2) because they add such a lovely touch of texture without taking up too much room! It’s all about finding those little things that make your space feel more "you" without filling it with stuff.',
+          'I’m trying to be a bit more thoughtful about the colors and textures I choose, and it’s really made a difference in how my space feels. It’s all about balance and finding what works for your unique space.',
+          'And don’t be afraid to experiment! It’s all part of the fun, and you never know what you might come up with.'
+        ]
+      },
+      {
+        heading: 'A Final Thought on Making Your Home Your Own',
+        paragraphs: [
+          'I think the most important thing is that your home, no matter how big or small, feels like a place where you can be yourself and truly relax. It’s all about creating a space that feels right for you, and I’m so happy to be finding new ways to do that in my own home.',
+          'I hope some of these ideas are helpful for you, too! And remember, there’s no right or wrong way to do this. It’s all about what makes you feel comfortable, happy, and at peace. So take your time, have a little fun with it, and create a space that’s all your own!',
+          'I’d love to hear how you keep your own home feeling calm and organized! Let me know if you have any favorite tips.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'pinterest-to-real-room',
+    title: 'From Pinterest Board to My Real-Life Home',
+    category: 'Home & Decor',
+    photo: 'desk',
+    excerpt: 'How I’m turning those beautiful pins into a space that actually works for me.',
+    productIds: ['hydrangea-notebook', 'life-planner', 'fleece-throw'],
+    introduction: 'Oh, friends, Pinterest is just dangerous, isn’t it? I’ve lost so many hours just pinning beautiful rooms and dreaming of how my home could look. But the problem is, it’s so hard to actually take those ideas and make them work in my own space. I’ve been trying to find ways to take my favorite pins and turn them into something I can actually use. I’ve been eyeing some lovely things—the Rifle Paper Co. Pink Hydrangea Spiral Notebook, the Erin Condren 12-Month Soft Bound Life Planner, Blush, and the Thesis Fleece Throw Blanket, Blush. I haven’t tried them yet, they are just on my wishlist, but I think they’d be such a lovely addition. Let me share how I’m approaching this, and remember, this is all about making your space work for YOU.',
+    sections: [
+      {
+        heading: 'Identify What You Truly Love',
+        paragraphs: [
+          'When I’m looking at all those pins, I try to see if there’s a pattern. What is it that I’m constantly pinning? Is it the colors? The textures? Or is it the overall vibe? I’ve realized that for me, I’m always drawn to soft colors, cozy textures, and a feeling of warmth. Once I figured that out, it became so much easier to think about how I could add those elements to my own home.',
+          'I love having a place to keep track of these ideas, and I’ve been wanting to get the Rifle Paper Co. Pink Hydrangea Spiral Notebook. I think it would be such a lovely place to jot down my ideas and keep track of everything I want to do. It’s such a simple way to stay organized and keep my thoughts together.',
+          'And don’t feel like you need to have a huge plan. It’s all about taking one little idea at a time and seeing what works. It’s a process, and it’s okay to take your time!'
+        ]
+      },
+      {
+        heading: 'Make It Work for Your Real Life',
+        paragraphs: [
+          'The most important thing I’ve learned is that my home needs to work for my real life. A beautiful room is nice, but it needs to be practical, too. I’m always looking for ways to make things work for me, like having a place to keep my planner and other essentials. I’ve been really wanting to get the Erin Condren 12-Month Soft Bound Life Planner, Blush, because it seems like such a lovely way to keep everything organized and make planning feel a little more enjoyable.',
+          'I think it’s so easy to focus on how a room looks and forget about how it works. I’ve been trying to be more mindful about that, and it’s really helped me to create a space that’s not just pretty, but also functional.',
+          'And it’s okay to have a little mess! My real life is messy, and my home should reflect that. It’s all about finding that balance between a pretty home and a home that you actually live in.'
+        ]
+      },
+      {
+        heading: 'Start Small and Be Gentle with Yourself',
+        paragraphs: [
+          'I’m trying to focus on starting small. I don’t need to change everything at once. I’ve been thinking about getting a soft throw, like the Thesis Fleece Throw Blanket, Blush, to add a little touch of coziness and color. It’s such a simple, small way to make a change, and I think that’s really the way to go.',
+          'And don’t be afraid to take your time! I’ve learned that it’s better to take my time and choose things I really love, rather than trying to finish everything as quickly as possible. It’s all about enjoying the process and being gentle with myself.',
+          'I think the most important thing is that my home feels like a place where I can relax and be myself. And if that means it doesn’t look like a Pinterest board, then that’s totally fine!'
+        ]
+      },
+      {
+        heading: 'Final Thought: Make It Yours',
+        paragraphs: [
+          'At the end of the day, your home is YOURS. It should be a place where you feel happy, comfortable, and at peace. And if that means it doesn’t always look perfect, that’s totally fine. The most important thing is that it’s a place where you can relax and be yourself.',
+          'I hope some of these ideas are helpful for you! And remember, there’s no right or wrong way to do this. It’s all about what makes you feel comfortable, happy, and at peace. So take your time, have a little fun with it, and create a space that’s all your own!',
+          'I’d love to hear how you turn your own Pinterest ideas into real-life home changes! Let me know if you have any favorite tips.'
+        ]
+      }
+    ]
+  }
 ];
-export function articleWordCount(article: Article): number {
- return [article.introduction, ...article.sections.flatMap(section => section.paragraphs)].join(' ').trim().split(/\s+/).length;
-}
