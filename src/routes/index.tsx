@@ -60,11 +60,11 @@ function Home() {
             <h1 className="mt-6 font-heading text-5xl leading-[1.05] tracking-tight text-foreground sm:text-6xl lg:text-7xl">
               Pretty things,
               <br />
-              <em className="text-primary">honestly</em> loved.
+              <em className="text-primary">thoughtfully</em> picked.
             </h1>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-muted-foreground">
               Welcome to my little corner of the internet — where I share the cozy,
-              beautiful finds from my Pinterest boards that are actually worth it.
+              pretty finds I pin on Pinterest, plus little stories about how to style them.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
@@ -204,7 +204,7 @@ function Home() {
                     "Skincare, makeup, and little rituals that feel like self-love."}
                   {category === "Home & Decor" &&
                     "Cozy corners, soft textures, and pieces that make a house a home."}
-                  {category === "Stationery & Tech" &&
+                  {category === "Stationery & Desk" &&
                     "Planners, pens, and desk pretties for romanticizing your to-do list."}
                 </p>
               </Link>

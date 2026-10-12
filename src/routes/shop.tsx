@@ -8,17 +8,17 @@ import { categories, products, type Category } from "@/data/products";
 export const Route = createFileRoute("/shop")({
   head: () => ({
     meta: [
-      { title: "Shop My Favorites — Lavenderlinenandlife" },
+      { title: "Curated Picks — Lavenderlinenandlife" },
       {
         name: "description",
         content:
-          "Every product I genuinely love, in one place — beauty, home decor, and stationery finds with links to shop them on Amazon.",
+          "Curated picks in one place — beauty, home decor, and stationery finds with links to shop them on Amazon.",
       },
-      { property: "og:title", content: "Shop My Favorites — Lavenderlinenandlife" },
+      { property: "og:title", content: "Curated Picks — Lavenderlinenandlife" },
       {
         property: "og:description",
         content:
-          "Every product I genuinely love, in one place — beauty, home decor, and stationery finds.",
+          "Curated picks in one place — beauty, home decor, and stationery finds.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -31,7 +31,7 @@ export const Route = createFileRoute("/shop")({
           "@type": "BreadcrumbList",
           itemListElement: [
             { "@type": "ListItem", position: 1, name: "Home", item: "https://lavenderlinenandlife.lovable.app/" },
-            { "@type": "ListItem", position: 2, name: "Shop My Favorites", item: "https://lavenderlinenandlife.lovable.app/shop" },
+            { "@type": "ListItem", position: 2, name: "Curated Picks", item: "https://lavenderlinenandlife.lovable.app/shop" },
           ],
         }),
       },
@@ -40,7 +40,7 @@ export const Route = createFileRoute("/shop")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ItemList",
-          name: "Shop My Favorites",
+          name: "Curated Picks",
           itemListElement: products.map((p, i) => ({
             "@type": "ListItem",
             position: i + 1,
@@ -72,10 +72,10 @@ function Shop() {
             The whole collection
           </p>
           <h1 className="mt-3 font-heading text-5xl tracking-tight text-foreground sm:text-6xl">
-            Shop my favorites
+            Curated picks
           </h1>
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-            Everything here is something I've tried, loved, and would gift to my best
+            These are curated picks I'd happily put on a wishlist or gift to my best
             friend. Links go to Amazon — I may earn a small commission, at no extra
             cost to you.
           </p>
