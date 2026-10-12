@@ -10,21 +10,30 @@ import { articles } from "@/data/editorial";
 
 export const Route = createFileRoute("/")({
   head: () => ({
-    meta: [
-      { title: "Lavenderlinenandlife — Cozy Finds & Curated Picks" },
-      {
-        name: "description",
-        content:
-          "Cozy home, beauty, and stationery picks plus real-life styling stories from Sandy of Lavenderlinenandlife, shared on Pinterest.",
-      },
-      { property: "og:title", content: "Lavenderlinenandlife — Cozy Finds & Curated Picks" },
-      {
-        property: "og:description",
-        content: "Blush-and-lavender home, beauty, and stationery picks, with stories on styling them.",
-      },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
+  
+meta: [
+  {
+    title:
+      "Lavender Linen and Life | Cozy Home Decor, Self-Care & Pretty Finds",
+  },
+  {
+    name: "description",
+    content:
+      "Discover cozy home decor, affordable self-care essentials, beautiful stationery, and feminine lifestyle inspiration. Explore curated finds and practical styling ideas from Lavender Linen and Life.",
+  },
+  {
+    property: "og:title",
+    content: "Lavender Linen and Life | Cozy Living & Curated Finds",
+  },
+  {
+    property: "og:description",
+    content:
+      "Explore cozy home decor, self-care, stationery, and beautiful everyday finds with practical lifestyle inspiration.",
+  },
+  { property: "og:type", content: "website" },
+  { name: "twitter:card", content: "summary_large_image" },
+],
+
     scripts: [
       {
         type: "application/ld+json",
@@ -63,8 +72,11 @@ function Home() {
               <em className="text-primary">thoughtfully</em> picked.
             </h1>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-muted-foreground">
-              Welcome to my little corner of the internet — where I share the cozy,
-              pretty finds I pin on Pinterest, plus little stories about how to style them.
+             Welcome to Lavender Linen and Life, your little corner for
+  cozy home decor, affordable self-care, pretty stationery, and
+  feminine lifestyle inspiration. Discover thoughtfully curated
+  finds, practical styling tips, and simple ideas for making
+  everyday life feel a little more beautiful.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
