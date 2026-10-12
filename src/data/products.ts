@@ -39,15 +39,16 @@ export interface Product {
 
 const raw: Omit<Product, "url">[] = [
   {
-    id: "fleece-throw",
-    name: "Fleece Throw Blanket in Blush",
-    brand: "Thesis",
+    id: "chunky-knit-throw",
+    name: "Chunky Knit Throw Blanket in Pink",
+    brand: "SALIMAH",
     category: "Home & Decor",
-    asin: "B0B64BTWTP",
+    asin: "B0DY76NZZP",
     image: blanketImg,
-    blurb: "A soft blush fleece throw, 50 × 60 inches — sofa-sized without swallowing the room.",
+    blurb:
+      "A hand-knit chunky chenille throw in pink, 40 × 40 inches — the oversized-stitch look, without the weight of a full-size blanket.",
     whyIPicked:
-      "That exact dusty-pink shade is the one I keep saving on Pinterest. It's the easiest way to warm up a plain grey couch.",
+      "This is the chunky-knit look I keep pinning, in exactly the dusty pink I'm after. At 40 × 40 it drapes over a chair arm or the foot of a bed instead of swallowing a whole sofa.",
     featured: true,
   },
   {

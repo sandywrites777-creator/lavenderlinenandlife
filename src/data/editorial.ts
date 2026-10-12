@@ -106,13 +106,13 @@ export const articles: Article[] = [
     category: 'Beauty & Self-care',
     photo: 'home',
     excerpt: 'How I wind down after a long day without any stress.',
-    productIds: ['fleece-throw', 'laura-mercier-blush', 'blush-bouquet-candle'],
-    introduction: 'Hi there! Sandy again. You know, I used to think that an "evening routine" meant I had to have a complex skincare ritual or a super structured plan. But lately, I’ve realized that for me, it’s just about being kind to myself before bed. It’s the simple things: a warm throw, maybe a little bit of pampering if I feel like it, and a nice, relaxing candle. I’ve been looking at the Thesis Fleece Throw Blanket, Blush, because it looks so incredibly soft. And I’ve been really wanting to try the Laura Mercier Blush Colour Infusion for those days when I want to feel a little bit fancy, even if I’m just staying home. And of course, a Yankee Candle Blush Bouquet Large Tumbler Candle is always on my mind to keep things feeling cozy. Let’s talk about how to make your evening a bit more gentle.',
+    productIds: ['chunky-knit-throw', 'laura-mercier-blush', 'blush-bouquet-candle'],
+    introduction: 'Hi there! Sandy again. You know, I used to think that an "evening routine" meant I had to have a complex skincare ritual or a super structured plan. But lately, I’ve realized that for me, it’s just about being kind to myself before bed. It’s the simple things: a warm throw, maybe a little bit of pampering if I feel like it, and a nice, relaxing candle. I’ve been looking at the SALIMAH Chunky Knit Throw Blanket in Pink, because it looks so incredibly soft. And I’ve been really wanting to try the Laura Mercier Blush Colour Infusion for those days when I want to feel a little bit fancy, even if I’m just staying home. And of course, a Yankee Candle Blush Bouquet Large Tumbler Candle is always on my mind to keep things feeling cozy. Let’s talk about how to make your evening a bit more gentle.',
     sections: [
       {
         heading: 'Keeping It Low-Pressure',
         paragraphs: [
-          'I used to get so stressed about my evening routine. Like, if I didn’t follow every single step, I felt like I was failing. Does anyone else feel like that? Now, I try to keep things super low-pressure. If I just want to sit on the sofa with my Thesis Fleece Throw Blanket, Blush, that’s my routine! I’m trying to let go of the idea that I have to be "productive" even in my downtime.',
+          'I used to get so stressed about my evening routine. Like, if I didn’t follow every single step, I felt like I was failing. Does anyone else feel like that? Now, I try to keep things super low-pressure. If I just want to sit on the sofa with my SALIMAH Chunky Knit Throw Blanket in Pink, that’s my routine! I’m trying to let go of the idea that I have to be "productive" even in my downtime.',
           'Sometimes, the best routine is just giving yourself permission to do nothing. And honestly, isn’t that the dream? I’ve found that when I take the pressure off, I actually enjoy my evenings so much more. It’s not about checking off a to-do list; it’s about taking care of myself in a way that feels good.',
           'And if I don’t get to everything I wanted to do? That’s okay! There’s always tomorrow. I’m learning to be a bit more patient with myself, and I think that’s been the biggest change of all.'
         ]
@@ -235,13 +235,13 @@ export const articles: Article[] = [
     category: 'Home & Decor',
     photo: 'home',
     excerpt: 'Simple, cozy additions to help make your bedroom feel like a little retreat.',
-    productIds: ['fleece-throw', 'velvet-pillow-covers', 'lavender-diffuser'],
-    introduction: 'Oh, hi friends! Sandy here. Is there anything better than heading to bed in a room that feels like a little sanctuary? I’ve been trying to make my bedroom feel a bit more cozy, especially since it’s where I spend all my time relaxing at the end of the day. I’ve been looking at some lovely things—the Thesis Fleece Throw Blanket, Blush, some Nestinco Blush Pink Velvet Pillow Covers (set of 2), and the ASAKUKI Essential Oil Diffuser with Lavender Oil. I haven’t tried these yet, they are just on my wishlist, but I think they would be such a lovely addition. Let me share how I’m approaching this, and remember, this is all about creating a space that feels like a big, warm hug for YOU.',
+    productIds: ['chunky-knit-throw', 'velvet-pillow-covers', 'lavender-diffuser'],
+    introduction: 'Oh, hi friends! Sandy here. Is there anything better than heading to bed in a room that feels like a little sanctuary? I’ve been trying to make my bedroom feel a bit more cozy, especially since it’s where I spend all my time relaxing at the end of the day. I’ve been looking at some lovely things—the SALIMAH Chunky Knit Throw Blanket in Pink, some Nestinco Blush Pink Velvet Pillow Covers (set of 2), and the ASAKUKI Essential Oil Diffuser with Lavender Oil. I haven’t tried these yet, they are just on my wishlist, but I think they would be such a lovely addition. Let me share how I’m approaching this, and remember, this is all about creating a space that feels like a big, warm hug for YOU.',
     sections: [
       {
         heading: 'Soft, Cozy Layers Are Everything',
         paragraphs: [
-          'I’ve realized that the secret to a cozy bedroom is all about the layers. I love having a few different throws and pillows to mix and match. I’ve been really wanting to get the Thesis Fleece Throw Blanket, Blush, because it just looks so soft and warm. And the Nestinco Blush Pink Velvet Pillow Covers (set of 2) would be a perfect addition to my bed! They add such a lovely, soft touch to the whole room.',
+          'I’ve realized that the secret to a cozy bedroom is all about the layers. I love having a few different throws and pillows to mix and match. I’ve been really wanting to get the SALIMAH Chunky Knit Throw Blanket in Pink, because it just looks so soft and warm. And the Nestinco Blush Pink Velvet Pillow Covers (set of 2) would be a perfect addition to my bed! They add such a lovely, soft touch to the whole room.',
           'I think it’s so important to have a space that feels inviting. When I walk into my room, I want to feel like I can just curl up and relax. And I’ve found that having those soft, cozy layers makes such a difference. It’s like it’s inviting you to take a break and just breathe.',
           'And don’t be afraid to experiment with different textures! You might be surprised by how much of a difference it makes to have a soft fleece throw next to some velvet pillows. It’s all about creating that inviting, cozy feel.'
         ]
@@ -321,8 +321,8 @@ export const articles: Article[] = [
     category: 'Home & Decor',
     photo: 'desk',
     excerpt: 'How I’m turning those beautiful pins into a space that actually works for me.',
-    productIds: ['hydrangea-notebook', 'life-planner', 'fleece-throw'],
-    introduction: 'Oh, friends, Pinterest is just dangerous, isn’t it? I’ve lost so many hours just pinning beautiful rooms and dreaming of how my home could look. But the problem is, it’s so hard to actually take those ideas and make them work in my own space. I’ve been trying to find ways to take my favorite pins and turn them into something I can actually use. I’ve been eyeing some lovely things—the Rifle Paper Co. Pink Hydrangea Spiral Notebook, the Erin Condren 12-Month Soft Bound Life Planner, Blush, and the Thesis Fleece Throw Blanket, Blush. I haven’t tried them yet, they are just on my wishlist, but I think they’d be such a lovely addition. Let me share how I’m approaching this, and remember, this is all about making your space work for YOU.',
+    productIds: ['hydrangea-notebook', 'life-planner', 'chunky-knit-throw'],
+    introduction: 'Oh, friends, Pinterest is just dangerous, isn’t it? I’ve lost so many hours just pinning beautiful rooms and dreaming of how my home could look. But the problem is, it’s so hard to actually take those ideas and make them work in my own space. I’ve been trying to find ways to take my favorite pins and turn them into something I can actually use. I’ve been eyeing some lovely things—the Rifle Paper Co. Pink Hydrangea Spiral Notebook, the Erin Condren 12-Month Soft Bound Life Planner, Blush, and the SALIMAH Chunky Knit Throw Blanket in Pink. I haven’t tried them yet, they are just on my wishlist, but I think they’d be such a lovely addition. Let me share how I’m approaching this, and remember, this is all about making your space work for YOU.',
     sections: [
       {
         heading: 'Identify What You Truly Love',
@@ -343,7 +343,7 @@ export const articles: Article[] = [
       {
         heading: 'Start Small and Be Gentle with Yourself',
         paragraphs: [
-          'I’m trying to focus on starting small. I don’t need to change everything at once. I’ve been thinking about getting a soft throw, like the Thesis Fleece Throw Blanket, Blush, to add a little touch of coziness and color. It’s such a simple, small way to make a change, and I think that’s really the way to go.',
+          'I’m trying to focus on starting small. I don’t need to change everything at once. I’ve been thinking about getting a soft throw, like the SALIMAH Chunky Knit Throw Blanket in Pink, to add a little touch of coziness and color. It’s such a simple, small way to make a change, and I think that’s really the way to go.',
           'And don’t be afraid to take your time! I’ve learned that it’s better to take my time and choose things I really love, rather than trying to finish everything as quickly as possible. It’s all about enjoying the process and being gentle with myself.',
           'I think the most important thing is that my home feels like a place where I can relax and be myself. And if that means it doesn’t look like a Pinterest board, then that’s totally fine!'
         ]
