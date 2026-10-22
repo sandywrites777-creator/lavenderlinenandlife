@@ -1,4 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { AffiliateNote } from "@/components/AffiliateNote";
+import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -83,9 +85,10 @@ function Shop() {
 
         <div className="mt-10 flex flex-wrap gap-2">
           {(["All", ...categories] as Filter[]).map((c) => (
-            <button
+            <Button
               key={c}
               onClick={() => setFilter(c)}
+              aria-pressed={filter === c}
               className={`rounded-full px-5 py-2.5 text-sm font-medium transition-all ${
                 filter === c
                   ? "bg-primary text-primary-foreground shadow-card"
@@ -93,14 +96,15 @@ function Shop() {
               }`}
             >
               {c}
-            </button>
+            </Button>
           ))}
         </div>
 
         <h2 className="sr-only">
           {filter === "All" ? "All products" : filter}
         </h2>
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <AffiliateNote className="mt-8" />
+        <div className="mt-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {visible.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}

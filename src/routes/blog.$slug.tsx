@@ -1,4 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { AffiliateNote } from "@/components/AffiliateNote";
 import { ArrowLeft } from "lucide-react";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -18,6 +19,7 @@ export const Route = createFileRoute("/blog/$slug")({
     if (!article) {
       return { meta: [{ title: "Story not found — Lavenderlinenandlife" }, { name: "robots", content: "noindex" }] };
     }
+    const photo = editorialPhotos[article.photo];
     const title = `${article.title} — Lavenderlinenandlife`;
     return {
       meta: [
@@ -26,6 +28,8 @@ export const Route = createFileRoute("/blog/$slug")({
         { property: "og:title", content: title },
         { property: "og:description", content: article.excerpt },
         { property: "og:type", content: "article" },
+        { property: "og:image", content: photo.image },
+        { name: "twitter:image", content: photo.image },
         { name: "twitter:card", content: "summary_large_image" },
       ],
     };
@@ -43,13 +47,15 @@ function StoryNotFound() {
         <h1 className="font-heading text-4xl text-foreground">That story wandered off</h1>
         <Link to="/blog" className="mt-6 inline-block text-primary">Back to the journal →</Link>
       </div>
+      <SiteFooter />
     </div>
   );
 }
 
 function BlogPost() {
   const { slug } = Route.useLoaderData();
-  const article = articles.find((a) => a.slug === slug)!;
+  const article = articles.find((a) => a.slug === slug);
+  if (!article) return <StoryNotFound />;
   const photo = editorialPhotos[article.photo];
   const picks = article.productIds.map(getProduct).filter(Boolean) as Product[];
   const more = articles.filter((a) => a.slug !== slug).slice(0, 3);
@@ -58,6 +64,7 @@ function BlogPost() {
     <div className="min-h-screen bg-background">
       <SiteNav />
       <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:py-16">
+        <AffiliateNote className="mb-5" />
         <Link to="/blog" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary">
           <ArrowLeft className="h-4 w-4" /> The journal
         </Link>
@@ -77,9 +84,6 @@ function BlogPost() {
           </figcaption>
         </figure>
 
-        <p className="mt-8 text-sm italic text-muted-foreground">
-          This post contains affiliate links. As an Amazon Associate I earn from qualifying purchases.
-        </p>
 
         <div className="mt-6 space-y-5 text-lg leading-relaxed text-foreground/85">
           <p className="first-letter:float-left first-letter:mr-2 first-letter:font-heading first-letter:text-6xl first-letter:leading-none first-letter:text-primary">
