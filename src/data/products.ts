@@ -74,12 +74,12 @@ const raw: Omit<Product, "url">[] = [
   {
     id: "velvet-pillow-covers",
     name: "Velvet Pillow Covers",
-    brand: "Amazon find",
+    brand: "Velvet cover set",
     category: "Home & Decor",
     asin: "B0F59WJ4PY",
     image: pillowImg,
     blurb: "Soft velvet covers to swap onto inserts you already own.",
-    whyIPicked: "Changing pillow covers is my favorite cheap trick for making a room look new for the season.",
+    whyIPicked: "Swapping covers is a low-cost way to refresh a room. Measure your existing inserts before ordering.",
   },
   {
     id: "life-planner",
