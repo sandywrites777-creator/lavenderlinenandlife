@@ -8,3 +8,6 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Contact uses a shared Zod-validated mailto draft helper; do not show a sent confirmation because delivery occurs in the visitor's email client, not on this site.
+- Reuse the shared affiliate note for conditional commission messaging across content and product surfaces so disclosures remain consistent.

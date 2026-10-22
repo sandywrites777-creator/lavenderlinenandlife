@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { AffiliateNote } from "@/components/AffiliateNote";
 import { ArrowRight, ExternalLink, Sparkles } from "lucide-react";
 import hero from "@/assets/hero.jpg";
 import { SiteNav } from "@/components/SiteNav";
@@ -51,7 +52,8 @@ meta: [
 });
 
 function Home() {
-  const featured = products.find((p) => p.featured)!;
+  const featured = products.find((p) => p.featured) ?? products[0];
+  if (!featured) return null;
   const editorsPicks = products.filter((p) => p.id !== featured.id).slice(0, 3);
 
   return (
@@ -124,6 +126,7 @@ function Home() {
             <blockquote className="mt-6 border-l-2 border-primary/50 pl-4 font-heading text-xl italic leading-relaxed text-foreground/80">
               "{featured.whyIPicked}"
             </blockquote>
+            <AffiliateNote className="mt-5" />
             <a
               href={featured.url}
               target="_blank"

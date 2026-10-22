@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { AFFILIATE_DISCLOSURE } from "@/components/AffiliateNote";
 import { Heart } from "lucide-react";
 import { PINTEREST_URL } from "@/data/products";
 
@@ -40,6 +41,10 @@ export function SiteFooter() {
                   About Me
                 </Link>
               </li>
+              <li><Link to="/blog" className="hover:text-primary">Blog</Link></li>
+              <li><Link to="/contact" className="hover:text-primary">Contact</Link></li>
+              <li><Link to="/privacy" className="hover:text-primary">Privacy Policy</Link></li>
+              <li><Link to="/affiliate-disclosure" className="hover:text-primary">Affiliate Disclosure</Link></li>
               <li>
                 <a
                   href={PINTEREST_URL}
@@ -58,9 +63,7 @@ export function SiteFooter() {
               A little honesty
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              As an Amazon Associate, I earn from qualifying purchases. Some links on
-              this site are affiliate links, which means I may earn a small commission
-              at no extra cost to you. I only share things I genuinely love.
+              {AFFILIATE_DISCLOSURE}
             </p>
           </div>
         </div>

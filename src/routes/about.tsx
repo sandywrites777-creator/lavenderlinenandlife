@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { AFFILIATE_DISCLOSURE } from "@/components/AffiliateNote";
 import { ArrowRight, Heart } from "lucide-react";
 import about from "@/assets/about.jpg";
 import { SiteNav } from "@/components/SiteNav";
@@ -91,9 +92,7 @@ function About() {
 <p className="flex items-start gap-2 text-base">
               <Heart className="mt-1 h-4 w-4 shrink-0 fill-primary text-primary" />
               <span>
-                Full transparency: as an Amazon Associate, I earn a small commission
-                from qualifying purchases — it never costs you anything extra, and it
-                helps me keep curating.
+                {AFFILIATE_DISCLOSURE}
               </span>
             </p>
           </div>
