@@ -21,42 +21,16 @@ export const articles: Article[] = [
     photo: 'desk',
     excerpt: 'Simple ways to make your workspace feel more like a place you actually want to spend time.',
     productIds: ['hydrangea-notebook', 'souffle-pens', 'blush-bouquet-candle'],
-    introduction: 'Oh, hi! It’s Sandy from Lavenderlinenandlife. I’ve been spending way too much time at my little desk lately, and I realized it was starting to feel a bit too much like a cold office. I want my workspace to be a little corner where I can actually feel creative and relaxed, even when I have a to-do list a mile long. You know that feeling when you just want a space that feels like a big, warm hug? That’s what I’m going for. I’ve been eyeing some lovely things like the LIANGW Coquette Hardcover Notebook, some Four Candies pastel mechanical pencils, and even a DARJEN Rose Scented Candle to keep things sweet while I work. I haven’t tried these yet, they are just on my wishlist, but I think they’d be so lovely to have around. Let me share what I’m planning, and remember, this is all about what feels good to you, not just making it look right for a photo.',
+    introduction: "A desk that feels cold is a desk you avoid. I haven’t tested these products myself, so this is what I looked at and what I’d check before buying. These five changes are cheap, and most don’t need you to buy anything.",
     sections: [
-      {
-        heading: 'Clear the Clutter (Seriously, Just Try It)',
-        paragraphs: [
-          'I know, I know, everyone says this, but it’s true. I started by taking everything—and I mean everything—off my desk. It’s wild how much stuff just ends up in a pile, isn’t it? I only put back what I truly use every single day. The rest? Gone into a little drawer where it won’t distract me. When I have that clear surface, it’s like my mind clears up, too. I think we often try to organize our clutter rather than just getting rid of it.',
-          'And once it was clear, I felt so much better. I think I’ve been trying to keep too much "just in case" stuff on my desk, but honestly, how many staplers do I really need within arm’s reach? Now, it’s just the basics. A spot for my laptop, a little space for my new LIANGW Coquette Hardcover Notebook, and a pen holder. That’s it. It’s so much more peaceful, and I don’t find myself constantly pushing papers around just to find a spot to put my coffee.',
-          'If you’re feeling a bit overwhelmed, just try clearing one corner. You don’t need to do the whole thing at once. Just start small. Maybe just a little square of your desk. See how that feels, and then go from there. It’s all about finding that balance between having what you need and not letting it take over your life.'
-        ]
-      },
-      {
-        heading: 'Bring in the Light',
-        paragraphs: [
-          'Lighting changes everything, right? I hate that harsh, bright overhead light that makes me feel like I’m in a doctor’s office. I’ve been looking for a nice, adjustable lamp that gives me a warm, soft glow. When it’s dark outside, having just that little pool of light on my work area makes such a difference. It makes it feel like it’s just me and my work, and not like I’m sitting in the middle of a busy, bright room.',
-          'And then, when I’m feeling a bit fancy, I’ll light my DARJEN Rose Scented Candle. It doesn’t just smell amazing—like, really sweet and fresh—but the glow from the candle is just so calming. It’s like a little ritual for me. I’ll light it, get my tea, and settle into my work. It makes the whole afternoon feel special, even if I’m just answering emails.',
-          'Just remember to be careful with where you put your candle. I keep mine well away from any papers or anything that could catch fire. It’s not worth the risk, no matter how much I love the scent! I think the key is just finding that little bit of light that works for you.'
-        ]
-      },
-      {
-        heading: 'Add Little Touches of Color (Because Why Not?)',
-        paragraphs: [
-          'I’m a huge fan of soft colors. I’m thinking of getting some Four Candies pastel mechanical pencils. The colors are just so pretty, and they have that fun, creamy look. Using a nice pen makes a difference, even if it’s just for jotting down a grocery list or a quick note. It’s a little treat for myself. Plus, they look so lovely resting next to my hydrangea notebook.',
-          'I used to think that "organized" meant "boring," but I’m realizing that’s not true at all. You can have a functional workspace that’s also colorful and fun. It’s all about finding what makes you smile. Maybe for you, it’s a bright mug or a funny little desk accessory. It doesn’t have to be expensive, and it doesn’t have to be brand new.',
-          'I think we spend too much time worrying about whether our workspace looks professional. Who cares? If it works for you and makes you happy, that’s all that matters. My desk isn’t perfect, and there are often papers scattered around by the end of the day, but that’s okay. It means I’ve been busy!'
-        ]
-      },
-      {
-        heading: 'Stay True to You',
-        paragraphs: [
-          'I think the most important thing I’ve learned is that I can’t just copy what someone else is doing. I’ve seen so many photos of perfect desks online, and I used to try to make mine look just like them. But it never really felt like mine, you know? Now, I’m trying to focus on what I actually need and what I actually love. It’s okay if my desk doesn’t look like a Pinterest board.',
-          'I’m still figuring it out, and that’s perfectly fine. I’m constantly moving my lamp, swapping out my pens, and trying to find the best spot for my notebook. It’s a journey, not a destination. And honestly, I think that’s the fun part of it. My workspace is always changing, just like I am.',
-          'Don’t be afraid to try new things and see what sticks. If something isn’t working, change it! It’s your space. Take a little bit of time today to just sit at your desk and think about what you actually want. You might be surprised by what you come up with.'
-        ]
-      }
+      { heading: "Clear the surface first", paragraphs: ["Take everything off the desk and put back only what you use daily: laptop, one notebook, one pen holder. A clear surface makes every pretty item look intentional.", "If clearing all of it feels like too much, start with a square about the size of your laptop."] },
+      { heading: "Use warm light, not overhead light", paragraphs: ["A small lamp with a warm bulb is kinder in the evening than a bright ceiling light. Look for bulbs labeled “warm white” or around 2700K.", "If you light a candle at your desk, like the DARJEN Rose Scented Candle, keep it away from paper, never leave it unattended, and blow it out when you leave."] },
+      { heading: "Pick two or three colors", paragraphs: ["Soft pink, lavender and cream look calm together. Too many colors look busy, so choose a palette first and buy to match it.", "The LIANGW Coquette Hardcover Notebook and the Four Candies pastel mechanical pencils suit a blush and lavender desk. Check the paper type and lead size on Amazon before buying, because pastel pens don’t always write as nicely as they look."] },
+      { heading: "Give small things a home", paragraphs: ["A tray or small pot for pencils, and a clip for charging cables, stops clutter coming back. Anything without a place ends up on the desk."] },
+      { heading: "Keep one thing you love in sight", paragraphs: ["A postcard, a small plant or a photo is enough. One personal item makes a desk feel like yours, and it costs almost nothing."] }
     ]
   },
+
   {
     slug: 'style-a-reading-nook',
     title: 'My Little Reading Corner Refresh',
@@ -64,42 +38,16 @@ export const articles: Article[] = [
     photo: 'home',
     excerpt: 'Turning a quiet corner into the ultimate reading retreat.',
     productIds: ['sherpa-throw', 'velvet-pillow-covers', 'lavender-diffuser'],
-    introduction: 'Hi friends! Sandy here. If you know me, you know that my absolute favorite way to spend an afternoon is curled up with a good book. I’ve been thinking a lot about my reading corner lately. It’s always been okay, but I really wanted to turn it into something a bit more... well, magical. Not "Pinterest-perfect" magic, but "I want to nap here for three hours" magic. I’ve been dreaming about getting a really soft L’COZEE Lavender Sherpa Plush Throw, maybe some pretty velvet pillow covers, and oh, definitely an ASAKUKI Essential Oil Diffuser with Lavender Oil to make the whole area smell like a dream. None of these are things I own yet, they’re just on my very long wishlist. But honestly, even just imagining it makes me want to start a new book right now! Let’s talk about how to make your own little reading nook, with whatever space you have.',
+    introduction: "A reading nook needs three things: a comfortable seat, soft light and something to rest your arm or lap on. I haven’t tested these products myself, so this is what I looked at and what I’d check before buying. This is how I’d plan one around a corner you already have.",
     sections: [
-      {
-        heading: 'Find Your Perfect Spot',
-        paragraphs: [
-          'You don’t need an entire spare room for a reading nook. My nook is just a corner of my living room, but honestly, it’s the best spot in the house. I found a chair that I just love, and I added a little stool for my feet. That’s all you really need! The important thing is that it’s comfortable. If you’re not comfortable, you’re not going to read for very long. I like to keep my nook away from the main traffic of the house so I can actually concentrate on my story. It’s my little getaway, even when I’m still at home.',
-          'I think it’s easy to feel like we need a huge, dedicated space to create a special spot. But honestly, even a corner of the bedroom or a quiet spot by a window can be perfect. I’ve even seen people create little nooks in a walk-in closet! Just find a place where you can be undisturbed for a little while, and that’s a win.',
-          'I love to think about what makes me feel relaxed. Is it sunlight? Is it quiet? Once you find that, you’ll know where your perfect spot is. And don’t be afraid to experiment! Move your chair around a bit until you find the spot that just feels right.'
-        ]
-      },
-      {
-        heading: 'Softness Is the Key',
-        paragraphs: [
-          'I cannot emphasize enough how much I love a good, soft throw blanket. I’ve been looking at the L’COZEE Lavender Sherpa Plush Throw, and it just looks so warm. I love the idea of draping it over the back of my chair. And the velvet pillow covers? Those would look so good on my chair. They add such a lovely touch of texture, you know? It’s not just about the color, it’s about how it feels when you’re relaxing.',
-          'You don’t need to replace your whole sofa, just adding one or two soft touches can really change the feel of the whole corner. I love how adding a velvet pillow or a soft blanket can make a space feel so much more inviting. It’s like it’s inviting you to stay for just a little while longer.',
-          'Plus, it’s a great way to add some color without painting the walls. I love my blush and lavender, but you can choose whatever colors make you happy! The goal is just to create a space that feels like a big, cozy hug.'
-        ]
-      },
-      {
-        heading: 'Scent and Atmosphere',
-        paragraphs: [
-          'I’ve really been getting into aromatherapy lately. I haven’t tried the ASAKUKI Essential Oil Diffuser yet, but I’ve heard such great things about having a little bit of lavender scent in the air. I think it would be so relaxing while I’m reading. Just a little hint of lavender, maybe a cup of herbal tea... it’s like a spa day right in my living room.',
-          'I do want to make sure I’m using it safely, though, so I’ll be careful about where I put it. It’s always better to start with just a little bit and see how you like it. You don’t need a strong scent to have an impact. Sometimes just a very subtle hint is enough.',
-          'And don’t forget that you can also add other things to the atmosphere. Maybe a little bit of soft music in the background? Or keeping the blinds closed if you want a cozy, quiet vibe? It’s all about creating the environment that works for you.'
-        ]
-      },
-      {
-        heading: 'Making It Your Own',
-        paragraphs: [
-          'The best thing about a reading nook is that it’s yours. If you want to pile up five different pillows, go for it! If you prefer a more minimalist look, that’s totally fine too. It’s not about following a set of rules; it’s about creating a space where you feel happy. I’ve spent way too much time worrying about what my home "should" look like, and I’m trying to move away from that. I just want my home to feel like a reflection of the things I love.',
-          'And right now, I love cozy throws and soft lavender scents. It makes me feel at home in my own space. Don’t be afraid to put your own spin on things! Maybe you want to add some fairy lights, or some favorite photos. It’s your nook, so make it a place that makes you feel like you.',
-          'And if you find yourself changing things around a lot, that’s okay too. My nook is always evolving, and I think that’s part of the fun of it. It’s a living, breathing space that changes with me.'
-        ]
-      }
+      { heading: "Choose the corner", paragraphs: ["Look for a quiet spot with a window or a lamp nearby. You don’t need a big room, and a chair with a small side table is enough."] },
+      { heading: "Add one soft layer", paragraphs: ["A throw makes the corner invite you to sit. The L’COZEE Lavender Sherpa Plush Throw is thick and teddy-soft, which suits colder evenings. Check the listed size, because some throws are smaller than they look in photos.", "If your sofa or chair is a neutral color, a lavender throw brings in color without painting anything."] },
+      { heading: "Refresh your cushions, not your furniture", paragraphs: ["Velvet pillow covers are a cheap way to change a corner’s look. Measure your existing inserts first, since covers need to match the insert size."] },
+      { heading: "Think about scent carefully", paragraphs: ["The ASAKUKI Essential Oil Diffuser comes bundled with lavender oil and holds 100 ml. If you have pets, read the safety notes first, as some essential oils are not suitable around animals. If a scent gives you a headache, switch it off."] },
+      { heading: "Keep it simple", paragraphs: ["Two cushions, one throw and a lamp is a complete nook. Add more only if the corner still feels bare after a week."] }
     ]
   },
+
   {
     slug: 'gentle-evening-routine',
     title: 'My Gentle Evening Rituals',
@@ -107,42 +55,16 @@ export const articles: Article[] = [
     photo: 'home',
     excerpt: 'How I wind down after a long day without any stress.',
     productIds: ['chunky-knit-throw', 'laura-mercier-blush', 'blush-bouquet-candle'],
-    introduction: 'Hi there! Sandy again. You know, I used to think that an "evening routine" meant I had to have a complex skincare ritual or a super structured plan. But lately, I’ve realized that for me, it’s just about being kind to myself before bed. It’s the simple things: a warm throw, maybe a little bit of pampering if I feel like it, and a nice, relaxing candle. I’ve been looking at the Lotus Karen Bubble Fleece Throw, because it looks so incredibly soft. And I’ve been really wanting to try the Laura Mercier Blush Colour Infusion for those days when I want to feel a little bit fancy, even if I’m just staying home. And of course, a DARJEN Rose Scented Candle is always on my mind to keep things feeling cozy. Let’s talk about how to make your evening a bit more gentle.',
+    introduction: "An evening routine doesn’t have to be a long skincare ritual. I haven’t tested these products myself, so this is what I looked at and what I’d check before buying. This is a simple five-step wind-down, and you can do any of it in any order.",
     sections: [
-      {
-        heading: 'Keeping It Low-Pressure',
-        paragraphs: [
-          'I used to get so stressed about my evening routine. Like, if I didn’t follow every single step, I felt like I was failing. Does anyone else feel like that? Now, I try to keep things super low-pressure. If I just want to sit on the sofa with my Lotus Karen Bubble Fleece Throw, that’s my routine! I’m trying to let go of the idea that I have to be "productive" even in my downtime.',
-          'Sometimes, the best routine is just giving yourself permission to do nothing. And honestly, isn’t that the dream? I’ve found that when I take the pressure off, I actually enjoy my evenings so much more. It’s not about checking off a to-do list; it’s about taking care of myself in a way that feels good.',
-          'And if I don’t get to everything I wanted to do? That’s okay! There’s always tomorrow. I’m learning to be a bit more patient with myself, and I think that’s been the biggest change of all.'
-        ]
-      },
-      {
-        heading: 'A Little Bit of Pampering',
-        paragraphs: [
-          'Sometimes, I do like to do a little something for myself. I’ve been thinking about the Laura Mercier Blush Colour Infusion. Even if I’m just washing my face, sometimes putting on a little bit of blush in the morning or just refreshing my look for dinner makes me feel a bit more... I don’t know, pulled together? I’m definitely not an expert at all, I just enjoy the process. It’s like a little moment of taking care of myself.',
-          'I think we all need those little moments, don’t you? It doesn’t have to be a big, expensive beauty routine. It can just be something that makes you feel a little bit better, a little bit more like yourself. And I think that’s all that really matters.',
-          'I’m definitely not saying you have to wear makeup all the time! Sometimes, the best routine is a fresh face and no makeup at all. It’s just about what makes YOU feel good. And for me, right now, that includes a little blush when I’m in the mood.'
-        ]
-      },
-      {
-        heading: 'Setting the Mood',
-        paragraphs: [
-          'I love how a candle can change the feel of a room. Like I said, I’m a huge fan of the DARJEN Rose Scented Candle. It’s just so sweet and welcoming. I usually light it for just a little while before I head to bed. It helps me signal to my brain that it’s time to relax. And of course, I’m always super careful. I never leave it burning if I’m not in the room.',
-          'Safety is key when you’re trying to be cozy! I love the scent, but I always make sure I’m keeping an eye on it. It’s a small price to pay for such a lovely atmosphere. And even if I don’t light a candle, I try to make sure my space feels inviting, whether it’s with some soft light or just by keeping things tidy.',
-          'I’ve noticed that when my space feels calm, I feel calm. And that’s a big part of how I wind down after a long day. It’s like I’m creating a sanctuary that helps me let go of the day’s stress.'
-        ]
-      },
-      {
-        heading: 'Being Okay with Imperfection',
-        paragraphs: [
-          'My evenings are definitely not perfect. Sometimes I’m too tired to do anything, and that’s okay. Sometimes I’m on my phone way too long, and that’s okay, too. I think we need to be a bit more gentle with ourselves. We don’t have to follow a set of rules. I’m just trying to make my evenings feel a little more like a treat, and a little less like a list of chores. If I can do that, I’m happy.',
-          'I’m constantly trying to find new ways to make my evenings a little bit more relaxing. I’ve tried reading, listening to podcasts, and even just sitting in silence. Some things work, some things don’t. And that’s perfectly fine! It’s all about finding what works for you.',
-          'I hope you can find your own little way to relax, too. Whether it’s with a soft blanket, a favorite book, or just a quiet cup of tea, you deserve those little moments of peace. Let’s all try to be a bit kinder to ourselves, shall we?'
-        ]
-      }
+      { heading: "Step 1: Put the phone away", paragraphs: ["Choose a time, even 20 or 30 minutes before bed, and leave the phone in another room. It’s the step that makes the others easier to enjoy."] },
+      { heading: "Step 2: Dim the lights", paragraphs: ["Soft light tells you the day is ending. Switch off the overhead light and use a lamp or a candle."] },
+      { heading: "Step 3: Wash your face and moisturize", paragraphs: ["Use whatever gentle products suit your skin. If you wear makeup for a special evening, a blush like the Laura Mercier Blush Colour Infusion is a treat, but check the shade before you order."] },
+      { heading: "Step 4: Get cozy", paragraphs: ["A throw over your knees makes sitting still feel nicer. The Lotus Karen Bubble Fleece Throw measures 40 × 40 inches, so it suits a lap or a chair arm but won’t cover a whole bed."] },
+      { heading: "Step 5: Write three lines", paragraphs: ["What went well, one thing you’re grateful for, and one thing for tomorrow. It takes two minutes and clears your head.", "If you light the DARJEN Rose Scented Candle for this step, blow it out before you go to bed."] }
     ]
   },
+
   {
     slug: 'paper-planning-that-works',
     title: 'How I Actually Get Organized (And Stay That Way!)',
@@ -150,42 +72,16 @@ export const articles: Article[] = [
     photo: 'planning',
     excerpt: 'One planner, a few simple habits, and a system that actually fits my messy, wonderful life.',
     productIds: ['life-planner', 'souffle-pens', 'hydrangea-notebook'],
-    introduction: 'Oh, friends, planning has always been a bit of a struggle for me! I’d buy these beautiful, expensive planners, use them for about three weeks, and then—oops—they’d end up in the drawer. But I think I’ve finally found a way that actually works for me, and I wanted to share it. It’s not about fancy, complicated systems. It’s just about having a place to keep track of the things that matter, and maybe a few pretty things to make the process a little more fun. I’ve been eyeing the Forvencer 2027 Hardcover Planner, some Four Candies pastel mechanical pencils, and a LIANGW Coquette Hardcover Notebook. I haven’t tried them yet, but they seem like they’d make planning a little bit more enjoyable. Let’s talk about my simple approach to staying organized without the stress!',
+    introduction: "The best planner is the one you actually open. I haven’t tested these products myself, so this is what I looked at and what I’d check before buying. Here’s how I’d choose one and keep using it.",
     sections: [
-      {
-        heading: 'Find a Planner You Actually Like',
-        paragraphs: [
-          'This might sound obvious, but it took me a long time to realize it! If you don’t like the look and feel of your planner, you won’t use it. For a long time, I bought these really serious, "professional" planners that just felt like a chore to open. Now, I’m focusing on finding something that makes me happy. I think the Forvencer 2027 Hardcover Planner, looks so lovely—it’s simple, elegant, and I love the color!',
-          'I think it’s important to have a planner that fits your needs. Do you need lots of space for appointments? Or are you more into task lists? I’ve realized that for me, a simple layout works best. I like having a place to see my whole week at a glance, and enough room to jot down a few things for each day. It’s all about finding what works for YOU.',
-          'And don’t feel like you have to stick with one type of planner forever. If your needs change, your planner can change, too. It’s your tool, and it should work for you.'
-        ]
-      },
-      {
-        heading: 'Make It Fun with Nice Supplies',
-        paragraphs: [
-          'I’ve realized that I’m much more likely to use my planner if I actually like the supplies I’m using with it. I have a thing for nice pens, and I’ve been really wanting to try the Four Candies pastel mechanical pencils. The colors are so soft and pretty, and they make planning feel less like a chore and more like a creative outlet. It’s such a small thing, but it really makes a difference.',
-          'I also love having a little notebook, like the LIANGW Coquette Hardcover Notebook, for when I have random ideas or need to make a quick list. It’s so nice to have a dedicated place for that, so it doesn’t clutter up my main planner. It’s all about finding what works for you and having a little fun with it.',
-          'Just don’t go overboard! I’ve definitely had those moments where I bought way too many stationery supplies and then didn’t know what to do with them. It’s better to have a few things you love and actually use than a drawer full of unused stuff.'
-        ]
-      },
-      {
-        heading: 'Keep It Simple',
-        paragraphs: [
-          'I think the biggest mistake I made when I was starting out was trying to make my planner look like a work of art. I’d spend hours decorating pages, and then I wouldn’t actually have any time to plan! Now, I’m trying to keep things simple. It’s all about function, not perfection. If I have a busy week, my planner might just have a few scribbles in it, and that’s perfectly fine.',
-          'I try to do a little bit of planning at the beginning of each week, and then I just check in with it every day. It doesn’t have to take long. In fact, if it takes more than a few minutes, I’m probably doing it wrong. The goal is to make my life easier, not more complicated.',
-          'And if I miss a day? Or even a whole week? It’s okay! I just start again. It’s a tool, not a judge. I’m trying to be a bit more gentle with myself and accept that life is messy and unpredictable, and that’s okay.'
-        ]
-      },
-      {
-        heading: 'A Little Bit of Reflection',
-        paragraphs: [
-          'One of the things that’s helped me the most is taking a little bit of time at the end of each week to look back. I’ll see what I got done, what didn’t get done, and what I want to focus on for next week. It’s so helpful to see how much I’ve accomplished, even on those weeks when I feel like I didn’t get much done.',
-          'I’ve also started writing down a few things that I’m grateful for each week, even if it’s just something small. It’s such a simple way to keep things in perspective and remind myself of all the good things in my life. It’s not about being perfect; it’s about acknowledging the good.',
-          'I hope you find some of these tips helpful. And remember, the most important thing is that your planning system works for YOU. It doesn’t have to be perfect, it just has to be useful. So don’t stress, have a little fun, and find what works for you!'
-        ]
-      }
+      { heading: "Pick a layout for how you plan", paragraphs: ["If you like to see the whole month, you need a good monthly spread. If you plan day by day, you need roomy weekly pages. The Forvencer 2027 Hardcover Planner has both monthly and weekly pages. Check the start month before you buy, because some planners begin in the middle of the year."] },
+      { heading: "Choose one notebook for ideas", paragraphs: ["Keep your plans in the planner and your thoughts in a separate notebook. The LIANGW Coquette Hardcover Notebook works well for lists and journaling, and it’s pretty enough to leave on your desk."] },
+      { heading: "Use pencils for plans that change", paragraphs: ["Plans change, so pencil is kinder than pen. The Four Candies pastel mechanical pencils are made for planners. Test one on the back page first, as some papers show smudges."] },
+      { heading: "Keep the habit tiny", paragraphs: ["Open the planner once a day, at the same time, and write only three things. A system you can finish in two minutes is a system you’ll keep."] },
+      { heading: "Review once a week", paragraphs: ["Pick one evening a week to look back and move unfinished tasks forward. This takes about 10 minutes, and it keeps small tasks from piling up."] }
     ]
   },
+
   {
     slug: 'blush-lavender-home',
     title: 'Adding a Little Blush and Lavender to My Home',
